@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Пролог.mp3-f1b9404ff724e733a5f1a356b841bb77.mp3str"
+
+[deps]
+
+source_file="res://music/Пролог.mp3"
+dest_files=[ "res://.import/Пролог.mp3-f1b9404ff724e733a5f1a356b841bb77.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0
