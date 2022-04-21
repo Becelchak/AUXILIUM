@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Поливка огорода.mp3-a54c593890e85913504ebad252ab6875.mp3str"
+
+[deps]
+
+source_file="res://dialogic/sounds/Поливка огорода.mp3"
+dest_files=[ "res://.import/Поливка огорода.mp3-a54c593890e85913504ebad252ab6875.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

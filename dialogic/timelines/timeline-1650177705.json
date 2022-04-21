@@ -5,20 +5,24 @@
 			"background-music": "play",
 			"event_id": "dialogic_031",
 			"event_name": "BackgroundMusic",
-			"fade_length": 1,
+			"fade_length": 0.9,
 			"file": "res://music/Пролог.mp3",
-			"volume": -0.02
+			"volume": -5
 		},
 		{
 			"background": "res://locations/Prolog.png",
 			"event_id": "dialogic_021",
-			"fade_duration": 1
+			"fade_duration": 3
 		},
 		{
-			"character": "",
+			"event_id": "dialogic_024",
+			"set_theme": "default-theme.cfg"
+		},
+		{
+			"character": "character-1650209144.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "Вы юный селянин - Крока. По деревенскому обычаю, вы были избраны на роль ученика деревенского лекаря - Савелия, который уже слишком стар и вот-вот отдаст Богу душу. Вы приходите в его удаленную избушку на окраине деревни, чтобы начать свой путь подмастерья лекаря."
+			"text": "Вы юный селянин - Крока. По деревенскому обычаю, вы были избраны на роль ученика деревенского лекаря - Савелия, который уже слишком стар и вот-вот отдаст Богу душу.\nВы приходите в его удаленную избушку на окраине деревни, чтобы начать свой путь подмастерья лекаря."
 		},
 		{
 			"change_timeline": "timeline-1650181750.json",
