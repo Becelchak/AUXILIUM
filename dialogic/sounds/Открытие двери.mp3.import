@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Открытие двери.mp3-6b02b82935412e686b5ddb8b5c8cd968.mp3str"
+
+[deps]
+
+source_file="res://dialogic/sounds/Открытие двери.mp3"
+dest_files=[ "res://.import/Открытие двери.mp3-6b02b82935412e686b5ddb8b5c8cd968.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

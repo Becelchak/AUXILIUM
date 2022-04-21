@@ -1,21 +1,29 @@
 {
 	"color": "#ff33804f",
 	"description": "",
-	"display_name": "",
-	"display_name_bool": false,
+	"display_name": "Савелий",
+	"display_name_bool": true,
 	"id": "character-1650178976.json",
 	"mirror_portraits": false,
 	"name": "Савелий",
-	"nickname": "",
-	"nickname_bool": false,
+	"nickname": "Савелий",
+	"nickname_bool": true,
 	"offset_x": 0,
 	"offset_y": 0,
 	"portraits": [
 		{
 			"name": "Default",
 			"path": "res://characters/Савелий-заглушка.png"
+		},
+		{
+			"name": "Савелий-заглушка удивление",
+			"path": "res://characters/Савелий-заглушка удивление.png"
+		},
+		{
+			"name": "Савелий-заглушка радость",
+			"path": "res://characters/Савелий-заглушка радость.png"
 		}
 	],
 	"scale": 100,
-	"theme": ""
+	"theme": "theme-1650186455.cfg"
 }

@@ -1,0 +1,21 @@
+{
+	"color": "#ffffffff",
+	"description": "",
+	"display_name": "Вы",
+	"display_name_bool": true,
+	"id": "character-1650187446.json",
+	"mirror_portraits": false,
+	"name": "Крока",
+	"nickname": "Крока",
+	"nickname_bool": true,
+	"offset_x": 0,
+	"offset_y": 0,
+	"portraits": [
+		{
+			"name": "Default",
+			"path": ""
+		}
+	],
+	"scale": 100,
+	"theme": "theme-1650186455.cfg"
+}

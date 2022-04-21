@@ -1,8 +1,28 @@
 {
 	"events": [
 		{
+			"audio": "play",
+			"audio_bus": "Master",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "res://dialogic/sounds/Открытие двери.mp3",
+			"volume": -1
+		},
+		{
+			"background": "res://locations/Laboratoria (2).png",
+			"event_id": "dialogic_021",
+			"fade_duration": 1.5
+		},
+		{
+			"character": "character-1650209144.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Зайдя внутрь причудливой хижины, вы могли наблюдать седого старца у стола с множеством пробирок, свертков и бумажек"
+		},
+		{
 			"animation": "1-fade_in.gd",
-			"animation_length": 0,
+			"animation_length": 1,
+			"animation_wait": true,
 			"change_mirror_portrait": false,
 			"change_z_index": false,
 			"character": "character-1650178976.json",
@@ -21,15 +41,135 @@
 			"z_index": 0
 		},
 		{
+			"event_id": "dialogic_024",
+			"set_theme": "theme-1650186455.cfg"
+		},
+		{
 			"character": "character-1650178976.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
 			"text": "Ну здравствуй внучек....ты откуда?"
+		},
+		{
+			"character": "character-1650187446.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Дядя Савелий, я Крока, из деревни я.\nСтароста сказал, быть мне следующим лекарем. Вот я и пришел к вам в ученики проситься"
+		},
+		{
+			"character": "character-1650178976.json",
+			"event_id": "dialogic_001",
+			"portrait": "Савелий-заглушка удивление",
+			"text": "В ученики ко мне? Неужели я настолько состарился?"
+		},
+		{
+			"character": "character-1650187446.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Дядя Савелий, вы уже сотню годков разменяли...пора бы уже"
+		},
+		{
+			"character": "character-1650178976.json",
+			"event_id": "dialogic_001",
+			"portrait": "Савелий-заглушка радость",
+			"text": "Хо-хох, да знаю-знаю я, что пора. Досадно признавать, что уже состарился"
+		},
+		{
+			"character": "character-1650178976.json",
+			"event_id": "dialogic_001",
+			"portrait": "Default",
+			"text": "Ну так, проходи, чего стоишь на пороге?\nБуду учить тебя премудростям алхимии. Чему научишься, тем и будешь деревне помогать"
+		},
+		{
+			"animation": "[Default]",
+			"animation_length": 0,
+			"change_mirror_portrait": false,
+			"change_z_index": false,
+			"character": "character-1650178976.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"portrait": "Default",
+			"portrait_definition": "",
+			"position": {
+				"0": false,
+				"1": false,
+				"2": false,
+				"3": false,
+				"4": false
+			},
+			"type": 1,
+			"z_index": 0
+		},
+		{
+			"event_id": "dialogic_024",
+			"set_theme": "default-theme.cfg"
+		},
+		{
+			"character": "character-1650209144.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Кивнув головой, вы зашли внутрь, вдыхая ранее неведомые запахи.\nНевообразимая помесь трав, земли и чего-то еще завлекло все ваше внимание.\nВы и опомниться не успели, как уселись за стол и стали слушать Савелия"
+		},
+		{
+			"event_id": "dialogic_024",
+			"set_theme": "theme-1650186455.cfg"
+		},
+		{
+			"character": "character-1650178976.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Итак, внучек. Осмотрись здесь хорошенько. Это значится - лаборатория, место где тебе предстоит провести большую часть жизни.\nЗдесь ты будешь сам изготавливать зелья и все шо душеньке угодно. Справа все нужные ингредиенты\nНа столе лежат весы, чтоб сверять дозировки ингредиентов.\nТак же на столе найдешь пробирки, что нагреет атанор - алхимическая печь.\nПрямо за атанором лежит ступка. Ею перемолишь все в месиво и закинешь вариться.\nНу что, не болит головушка? Все запомнил?"
+		},
+		{
+			"character": "character-1650187446.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Как-то  душно у вас тут, дядь Савелий. Травами всякими пахнет, и дышать нечем..."
+		},
+		{
+			"character": "character-1650178976.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Хех, ишь чего! Душно! С непривычки такое. Как просидишь тут с мое, так сразу привыкнешь.\nПойдем-ка в огород, покажу чего нарвать можно. А там уж и сворганим чего полезного"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "Пойти за стариком?"
+		},
+		{
+			"choice": "Да",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": "Да"
+		},
+		{
+			"change_timeline": "timeline-1650190757.json",
+			"event_id": "dialogic_020"
+		},
+		{
+			"choice": "Нет",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"event_id": "dialogic_022",
+			"transition_duration": 1
+		},
+		{
+			"event_id": "dialogic_013"
 		}
 	],
 	"metadata": {
 		"dialogic-version": "1.4.1",
 		"file": "timeline-1650181750.json",
-		"name": "Dialog1"
+		"name": "Dialog1-1"
 	}
 }

@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Laboratoria.png-c52fd0c2a49b4107941d49473152dd48.stex"
+path="res://.import/Савелий-заглушка удивление.png-222947f09a08116969c7b3c6c091e8a5.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://locations/Laboratoria.png"
-dest_files=[ "res://.import/Laboratoria.png-c52fd0c2a49b4107941d49473152dd48.stex" ]
+source_file="res://characters/Савелий-заглушка удивление.png"
+dest_files=[ "res://.import/Савелий-заглушка удивление.png-222947f09a08116969c7b3c6c091e8a5.stex" ]
 
 [params]
 
