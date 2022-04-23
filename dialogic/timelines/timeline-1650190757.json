@@ -75,6 +75,11 @@
 			"text": "Савелий берет маленькую лейку из под мантии и начинает поливать грядки\nЧудесным образом из казалось бы мертвой земли показываются растения"
 		},
 		{
+			"background": "res://locations/Garden-2.png",
+			"event_id": "dialogic_021",
+			"fade_duration": 0.5
+		},
+		{
 			"event_id": "dialogic_024",
 			"set_theme": "theme-1650186455.cfg"
 		},
@@ -117,10 +122,8 @@
 			"value": ""
 		},
 		{
-			"condition": "",
-			"definition": "",
-			"event_id": "dialogic_012",
-			"value": "Да"
+			"change_timeline": "timeline-1650715019.json",
+			"event_id": "dialogic_020"
 		},
 		{
 			"event_id": "dialogic_013"

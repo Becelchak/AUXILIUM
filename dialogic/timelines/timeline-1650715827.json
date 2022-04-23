@@ -1,0 +1,123 @@
+{
+	"events": [
+		{
+			"event_id": "dialogic_024",
+			"set_theme": "theme-1650186455.cfg"
+		},
+		{
+			"animation": "[Default]",
+			"animation_length": 0,
+			"change_mirror_portrait": false,
+			"change_z_index": false,
+			"character": "character-1650178976.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"portrait": "Default",
+			"portrait_definition": "",
+			"position": {
+				"0": false,
+				"1": false,
+				"2": false,
+				"3": false,
+				"4": true
+			},
+			"type": 0,
+			"z_index": 0
+		},
+		{
+			"character": "character-1650178976.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Ну, значится слушай, внучек.\nПервое зелье ты сделал, значит стал на шаг ближе к тому чтоб стать настоящим лекарем."
+		},
+		{
+			"character": "character-1650187446.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "А еще что-то нужно сделать?"
+		},
+		{
+			"character": "character-1650178976.json",
+			"event_id": "dialogic_001",
+			"portrait": "Савелий-заглушка радость",
+			"text": "Хо-хох! Нет конечно. Чтоб им стать одного зелья мало!"
+		},
+		{
+			"character": "character-1650187446.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Жаль..."
+		},
+		{
+			"character": "character-1650178976.json",
+			"event_id": "dialogic_001",
+			"portrait": "Default",
+			"text": "Ты лучше слушай и не перебивай.\nЗначится тебе нужно сделать еще порядка...скока тобишь  их там..\nА! Вспомнил! Все 21 зелье, что я знаю!\nВот их ты должен сделать."
+		},
+		{
+			"character": "character-1650187446.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Как-то много..."
+		},
+		{
+			"character": "character-1650178976.json",
+			"event_id": "dialogic_001",
+			"portrait": "Савелий-заглушка удивление",
+			"text": "Много? Эти 20, что остались, еще должны у тебя получиться!"
+		},
+		{
+			"character": "character-1650178976.json",
+			"event_id": "dialogic_001",
+			"portrait": "Default",
+			"text": "Я в свое время под сотню делал, пока не сварил все.\nНу да ладно о былом. Как и сказал - 20 зелий еще надобно сделать.\nОднако же с огородиком моим ты вряд ли все сделаешь"
+		},
+		{
+			"character": "character-1650187446.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Это почему же? Он мешать мне будет?"
+		},
+		{
+			"character": "character-1650178976.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Нет, не будет. Но сделать все равно не сможешь.\nНекоторые травы на нем просто не растут.\nЗа ними надобно в лес тебе сходить"
+		},
+		{
+			"character": "character-1650187446.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Л-лес? Шутите чтоль дядь Савелий?!\nМеня там Леший хвать и в трясину!"
+		},
+		{
+			"character": "character-1650178976.json",
+			"event_id": "dialogic_001",
+			"portrait": "Савелий-заглушка удивление",
+			"text": "Да сдался ты ему, внучек"
+		},
+		{
+			"character": "character-1650178976.json",
+			"event_id": "dialogic_001",
+			"portrait": "Савелий-заглушка радость",
+			"text": "Он вообще люд простой не трогает, наоборот - поможет даже, если принесешь чего путного ему"
+		},
+		{
+			"character": "character-1650187446.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "П-поможет?"
+		},
+		{
+			"character": "character-1650178976.json",
+			"event_id": "dialogic_001",
+			"portrait": "Default",
+			"text": "Да, травушку редкую покажет где искать или от зверины какой убережет.\nК слову о братьях наших меньших. В лесу волки водятся, да и не только.\nПоэтому надобно тебе изготовить зелья на этот случай.\nМожешь пока подождать и пособирать в огороде чего еще. \nЕсть еще заросли чуть дальше огорода, но там редко что-то растет.\nЕсли что непонял, обращайся"
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.4.1",
+		"file": "timeline-1650715827.json",
+		"name": "Dialog1-4"
+	}
+}
