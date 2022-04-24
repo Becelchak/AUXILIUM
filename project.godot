@@ -97,6 +97,13 @@ window/size/height=1080
 
 enabled=PoolStringArray( "res://addons/dialogic/plugin.cfg" )
 
+[importer_defaults]
+
+bitmap={
+"create_from": 0,
+"threshold": 0.5
+}
+
 [input]
 
 dialogic_default_action={

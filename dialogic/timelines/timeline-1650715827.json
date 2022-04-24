@@ -113,6 +113,67 @@
 			"event_id": "dialogic_001",
 			"portrait": "Default",
 			"text": "Да, травушку редкую покажет где искать или от зверины какой убережет.\nК слову о братьях наших меньших. В лесу волки водятся, да и не только.\nПоэтому надобно тебе изготовить зелья на этот случай.\nМожешь пока подождать и пособирать в огороде чего еще. \nЕсть еще заросли чуть дальше огорода, но там редко что-то растет.\nЕсли что непонял, обращайся"
+		},
+		{
+			"event_id": "dialogic_024",
+			"set_theme": "default-theme.cfg"
+		},
+		{
+			"character": "character-1650209144.json",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "Что делать?"
+		},
+		{
+			"choice": "Спросить что-то у Савелия",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1650209144.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "*Не реализовано*"
+		},
+		{
+			"event_id": "dialogic_022",
+			"transition_duration": 1
+		},
+		{
+			"choice": "Пойти в огород",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1650209144.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "*Не реализовано*"
+		},
+		{
+			"event_id": "dialogic_022",
+			"transition_duration": 1
+		},
+		{
+			"choice": "Пойти в лес",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"change_scene": "res://Scenes/2 Chapter.tscn",
+			"event_id": "dialogic_041"
 		}
 	],
 	"metadata": {

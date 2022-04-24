@@ -1,0 +1,25 @@
+{
+	"color": "#ff4d0101",
+	"description": "",
+	"display_name": "",
+	"display_name_bool": false,
+	"id": "character-1650731302.json",
+	"mirror_portraits": false,
+	"name": "Чудище",
+	"nickname": "",
+	"nickname_bool": false,
+	"offset_x": 0,
+	"offset_y": 0,
+	"portraits": [
+		{
+			"name": "Default",
+			"path": "res://characters/Квазир-заглушка.png"
+		},
+		{
+			"name": "Квазир-заглушка указывает",
+			"path": "res://characters/Квазир-заглушка указывает.png"
+		}
+	],
+	"scale": 100,
+	"theme": "theme-1650186455.cfg"
+}
