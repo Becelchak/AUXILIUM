@@ -6,7 +6,7 @@
 			"event_id": "dialogic_031",
 			"event_name": "BackgroundMusic",
 			"fade_length": 1,
-			"file": "res://music/Глава 2.mp3",
+			"file": "res://music/Глава 2 (Лес).mp3",
 			"volume": 0
 		},
 		{
@@ -317,6 +317,26 @@
 			"event_id": "dialogic_001",
 			"portrait": "",
 			"text": "Значит никак."
+		},
+		{
+			"animation": "[Default]",
+			"animation_length": 0,
+			"change_mirror_portrait": false,
+			"change_z_index": false,
+			"character": "character-1650731302.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"portrait": "",
+			"portrait_definition": "",
+			"position": {
+				"0": false,
+				"1": false,
+				"2": false,
+				"3": false,
+				"4": false
+			},
+			"type": 1,
+			"z_index": 0
 		},
 		{
 			"animation": "back_out_left.gd",
