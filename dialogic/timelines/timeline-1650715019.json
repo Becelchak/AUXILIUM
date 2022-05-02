@@ -1,6 +1,15 @@
 {
 	"events": [
 		{
+			"audio_bus": "Master",
+			"background-music": "play",
+			"event_id": "dialogic_031",
+			"event_name": "BackgroundMusic",
+			"fade_length": 0.9,
+			"file": "res://music/Пролог (Прибытие).mp3",
+			"volume": -6
+		},
+		{
 			"audio": "play",
 			"audio_bus": "Master",
 			"event_id": "dialogic_030",
@@ -11,6 +20,10 @@
 		{
 			"background": "res://locations/Laboratoria (2).png",
 			"event_id": "dialogic_021"
+		},
+		{
+			"event_id": "dialogic_024",
+			"set_theme": "default-theme.cfg"
 		},
 		{
 			"character": "character-1650209144.json",
@@ -172,6 +185,6 @@
 	"metadata": {
 		"dialogic-version": "1.4.1",
 		"file": "timeline-1650715019.json",
-		"name": "Dialog1-3"
+		"name": "Chapter_I"
 	}
 }

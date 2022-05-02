@@ -1,8 +1,7 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://Scenes/Buttons/SceneButton.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Scripts/Menu.gd" type="Script" id=2]
-[ext_resource path="res://Scripts/SceneButton.gd" type="Script" id=3]
 [ext_resource path="res://addons/dialogic/Example Assets/Fonts/DefaultBoldFont.tres" type="DynamicFont" id=4]
 [ext_resource path="res://Menu-background.png" type="Texture" id=5]
 
@@ -45,7 +44,6 @@ theme = SubResource( 1 )
 custom_colors/font_color_disabled = Color( 0.235294, 0.509804, 0.309804, 1 )
 custom_colors/font_color = Color( 1, 1, 1, 1 )
 text = "Start game"
-script = ExtResource( 3 )
 scene_to_open = "res://Scenes/Prolog.tscn"
 
 [node name="Setting" parent="Buttons" instance=ExtResource( 1 )]
@@ -60,7 +58,6 @@ theme = SubResource( 1 )
 custom_colors/font_color_disabled = Color( 0.235294, 0.509804, 0.309804, 1 )
 custom_colors/font_color = Color( 1, 1, 1, 1 )
 text = "Setting"
-script = ExtResource( 3 )
 
 [node name="End" parent="Buttons" instance=ExtResource( 1 )]
 material = SubResource( 2 )
@@ -74,4 +71,3 @@ theme = SubResource( 1 )
 custom_colors/font_color_disabled = Color( 0.235294, 0.509804, 0.309804, 1 )
 custom_colors/font_color = Color( 1, 1, 1, 1 )
 text = "Exit game"
-script = ExtResource( 3 )
