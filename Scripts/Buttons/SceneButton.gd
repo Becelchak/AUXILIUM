@@ -1,2 +1,6 @@
 extends Button
-export(String) var scene_to_open
+
+var scene_to_open = ""
+
+func set_next_scene(path):
+	scene_to_open = path

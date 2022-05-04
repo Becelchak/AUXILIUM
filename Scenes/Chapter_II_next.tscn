@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Scripts/Chapter_II_next.cs" type="Script" id=1]
+
+[node name="Chapter_II_next" type="Node2D"]
+script = ExtResource( 1 )

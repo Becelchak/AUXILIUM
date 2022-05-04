@@ -1,21 +1,34 @@
 extends KinematicBody2D
+
+onready var ui = get_node("/root/Ui/Control")
+onready var popup = get_node("/root/Ui/Attention")
+
 var items = 0
 var maxItems = 0
+var inventory = {}
 
 func _ready():
 	pass
 
 func pick(item):
+	var object = item.get_item()
+	if object in  inventory.keys():
+		inventory[object][0] += item.get_amount()
+	else: 
+		inventory[object] = [item.get_amount(), item.get_item_stack()]
 	items += 1
-	print("Items %s" % str(items))
+	ui.update_inventory(inventory)
 	if((maxItems == items) && (items != 0)):
-		for i in range (0,10):
-			if(i == 8):
-				print("Вставить оповещение")
-				change_scene("res://Scenes/Chapter_I.tscn")
+			popup.popup()
+			maxItems = 0
+			items = 0
 
 func setMaxItem(count):
 	maxItems = count
 
 func change_scene(path):
 	SceneChanger.change_scene(path)
+
+func _unhandled_input(event):
+	if event.is_action_pressed("InventoryOpen"):
+		ui.toggle_inventory(inventory)

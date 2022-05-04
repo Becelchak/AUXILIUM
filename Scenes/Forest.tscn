@@ -1,0 +1,23 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://Scenes/Camera2D.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Scripts/Forest.gd" type="Script" id=2]
+[ext_resource path="res://Scripts/Root2.gd" type="Script" id=3]
+[ext_resource path="res://locations/Forest-deep.jpg" type="Texture" id=4]
+
+[node name="Root" type="Node2D"]
+script = ExtResource( 3 )
+
+[node name="Forest" type="Node2D" parent="."]
+script = ExtResource( 2 )
+
+[node name="Forest" type="Sprite" parent="Forest"]
+position = Vector2( 958.151, 541.25 )
+scale = Vector2( 1.9103, 1.9103 )
+texture = ExtResource( 4 )
+
+[node name="Camera2D" parent="Forest" instance=ExtResource( 1 )]
+position = Vector2( 974, 547 )
+zoom = Vector2( 0.4, 0.4 )
+
+[node name="Items" type="Node2D" parent="Forest"]

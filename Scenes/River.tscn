@@ -1,0 +1,23 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://Scenes/Camera2D.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Scripts/River.gd" type="Script" id=2]
+[ext_resource path="res://locations/Swamp.jpg" type="Texture" id=3]
+[ext_resource path="res://Scripts/RootMain.gd" type="Script" id=4]
+
+[node name="Root" type="Node2D"]
+script = ExtResource( 4 )
+
+[node name="River" type="Node2D" parent="."]
+script = ExtResource( 2 )
+
+[node name="Sprite" type="Sprite" parent="River"]
+position = Vector2( 967, 394 )
+scale = Vector2( 1.60778, 1.60778 )
+texture = ExtResource( 3 )
+
+[node name="Camera2D" parent="River" instance=ExtResource( 1 )]
+position = Vector2( 962, 552 )
+zoom = Vector2( 0.4, 0.4 )
+
+[node name="Items" type="Node2D" parent="River"]

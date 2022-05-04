@@ -331,7 +331,7 @@
 			"volume": 0
 		},
 		{
-			"background": "res://locations/Laboratoria (2).png",
+			"background": "res://locations/Laboratoria (2).jpg",
 			"event_id": "dialogic_021"
 		},
 		{

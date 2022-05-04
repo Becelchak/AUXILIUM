@@ -369,8 +369,8 @@
 			"text": "Вы продолжаете свой путь дальше\n*Дальнейший геймплей*"
 		},
 		{
-			"change_timeline": "timeline-1650732370.json",
-			"event_id": "dialogic_020"
+			"change_scene": "res://Scenes/Forest.tscn",
+			"event_id": "dialogic_041"
 		}
 	],
 	"metadata": {
