@@ -1,6 +1,6 @@
 extends KinematicBody2D
 
-onready var ui = get_node("/root/Ui/Control")
+onready var ui = get_node("/root/Ui/Inventory")
 onready var popup = get_node("/root/Ui/Attention")
 
 var items = 0

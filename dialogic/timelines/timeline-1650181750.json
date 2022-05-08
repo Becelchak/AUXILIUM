@@ -9,7 +9,7 @@
 			"volume": -1
 		},
 		{
-			"background": "res://locations/Laboratoria (2).jpg",
+			"background": "res://locations/Laboratoria.jpg",
 			"event_id": "dialogic_021",
 			"fade_duration": 1.5
 		},
@@ -160,8 +160,22 @@
 			"value": ""
 		},
 		{
-			"event_id": "dialogic_022",
-			"transition_duration": 1
+			"event_id": "dialogic_024",
+			"set_theme": "default-theme.cfg"
+		},
+		{
+			"character": "character-1650209144.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Спустя некоторое время, Савелий возвращается, тыча в вас своей палкой\nВскоре он насильно выгоняет вас на улицу"
+		},
+		{
+			"event_id": "dialogic_024",
+			"set_theme": "theme-1650186455.cfg"
+		},
+		{
+			"change_timeline": "timeline-1650190757.json",
+			"event_id": "dialogic_020"
 		},
 		{
 			"event_id": "dialogic_013"

@@ -2,7 +2,7 @@
 
 [ext_resource path="res://Scenes/Camera2D.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Scripts/Forest.gd" type="Script" id=2]
-[ext_resource path="res://Scripts/Root2.gd" type="Script" id=3]
+[ext_resource path="res://Scripts/RootMain.gd" type="Script" id=3]
 [ext_resource path="res://locations/Forest-deep.jpg" type="Texture" id=4]
 
 [node name="Root" type="Node2D"]

@@ -9,7 +9,7 @@
 			"volume": 0
 		},
 		{
-			"background": "res://locations/Laboratoria (2).jpg",
+			"background": "res://locations/Laboratoria.jpg",
 			"event_id": "dialogic_021"
 		},
 		{
@@ -195,7 +195,7 @@
 			"character": "character-1650209144.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "Вы выходите из подвала и продолжаете заниматься своими делами\n*Остальной геймплей*"
+			"text": "Вы выходите из подвала и продолжаете заниматься своими делами"
 		},
 		{
 			"change_scene": "res://Scenes/MainGame.tscn",

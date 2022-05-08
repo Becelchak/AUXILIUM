@@ -1,6 +1,6 @@
 extends Popup
 onready var button = $Button
-var path_next = "f"
+var next_scene = ""
 
 func _ready():
 	pass
@@ -8,10 +8,8 @@ func _ready():
 func change_scene(path):
 	SceneChanger.change_scene(path)
 	get_parent().close_popup()
-
-#func set_next_scene(path):
-	button.set_next_scene(path)
+	button.disconnect("pressed", self, "change_scene")
 
 func path_next(path):
-	path_next = path
-	button.connect("pressed", self, "change_scene", [path_next])
+	next_scene = path
+	button.connect("pressed", self, "change_scene", [next_scene])

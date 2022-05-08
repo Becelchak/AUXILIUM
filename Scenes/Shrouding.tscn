@@ -12,8 +12,8 @@ script = ExtResource( 4 )
 script = ExtResource( 3 )
 
 [node name="Sprite" type="Sprite" parent="Shrouding"]
-position = Vector2( 968.222, 544.5 )
-scale = Vector2( 1.20778, 1.20778 )
+position = Vector2( 963.778, 542 )
+scale = Vector2( 1.59407, 1.59407 )
 texture = ExtResource( 2 )
 
 [node name="Camera2D" parent="Shrouding" instance=ExtResource( 1 )]

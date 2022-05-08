@@ -24,6 +24,5 @@ func get_item_stack():
 func _input(event):
 	if event is InputEventMouseButton:
 		if abs(event.position.x - position.x) < 50 and abs(event.position.y - position.y) < 50 :
-			print("Mouse Click/Unclick at: ", event.position)
 			get_parent().remove_child(self)
 			player.pick(self)

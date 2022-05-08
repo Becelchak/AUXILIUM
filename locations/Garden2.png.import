@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Laboratoria (2).png-9df17865d87ef0c0b7db4b439ebc91c7.stex"
+path="res://.import/Garden2.png-45751a0463b45320d21ebb5d9052d4e6.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://locations/Laboratoria (2).png"
-dest_files=[ "res://.import/Laboratoria (2).png-9df17865d87ef0c0b7db4b439ebc91c7.stex" ]
+source_file="res://locations/Garden2.png"
+dest_files=[ "res://.import/Garden2.png-45751a0463b45320d21ebb5d9052d4e6.stex" ]
 
 [params]
 

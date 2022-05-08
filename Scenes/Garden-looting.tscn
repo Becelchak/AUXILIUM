@@ -12,8 +12,8 @@ script = ExtResource( 3 )
 script = ExtResource( 4 )
 
 [node name="Garden-2" type="Sprite" parent="Garden"]
-position = Vector2( 699, 510 )
-scale = Vector2( 1.30907, 1.38237 )
+position = Vector2( 957.509, 537.706 )
+scale = Vector2( 2.74712, 2.90094 )
 texture = ExtResource( 1 )
 
 [node name="Camera2D" parent="Garden" instance=ExtResource( 6 )]

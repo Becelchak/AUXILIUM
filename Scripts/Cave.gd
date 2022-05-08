@@ -12,5 +12,5 @@ func _ready():
 		var new_item = item.instance()
 		$Items.add_child(new_item)
 		new_item.set_item(items[name])
-		new_item.position = Vector2(int(rand_range(850,550)), int(rand_range(400,950)))
+		new_item.position = Vector2(int(rand_range(10,500)), int(rand_range(200,950)))
 	pass

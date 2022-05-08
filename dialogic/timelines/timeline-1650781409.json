@@ -7,7 +7,7 @@
 			"event_name": "BackgroundMusic",
 			"fade_length": 1,
 			"file": "res://music/Глава 3 (Подвал).mp3",
-			"volume": 0
+			"volume": -4
 		},
 		{
 			"audio": "play",
@@ -331,7 +331,7 @@
 			"volume": 0
 		},
 		{
-			"background": "res://locations/Laboratoria (2).jpg",
+			"background": "res://locations/Laboratoria.jpg",
 			"event_id": "dialogic_021"
 		},
 		{

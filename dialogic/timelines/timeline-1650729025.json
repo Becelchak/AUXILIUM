@@ -7,7 +7,7 @@
 			"event_name": "BackgroundMusic",
 			"fade_length": 1,
 			"file": "res://music/Глава 2 (Лес).mp3",
-			"volume": 0
+			"volume": -8
 		},
 		{
 			"background": "res://locations/Forest.png",
@@ -366,10 +366,10 @@
 			"character": "character-1650209144.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "Вы продолжаете свой путь дальше\n*Дальнейший геймплей*"
+			"text": "Вы продолжаете свой путь дальше"
 		},
 		{
-			"change_scene": "res://Scenes/Forest.tscn",
+			"change_scene": "res://Scenes/ForestStory.tscn",
 			"event_id": "dialogic_041"
 		}
 	],

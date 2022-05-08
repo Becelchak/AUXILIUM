@@ -12,7 +12,7 @@ script = ExtResource( 3 )
 script = ExtResource( 2 )
 
 [node name="Sprite" type="Sprite" parent="Cave"]
-position = Vector2( 962, 342 )
+position = Vector2( 949, 503 )
 scale = Vector2( 1.99418, 1.98422 )
 texture = ExtResource( 4 )
 

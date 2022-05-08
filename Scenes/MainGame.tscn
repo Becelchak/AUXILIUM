@@ -3,7 +3,7 @@
 [ext_resource path="res://addons/dialogic/Example Assets/Fonts/DefaultFont.tres" type="DynamicFont" id=1]
 [ext_resource path="res://Scripts/MainGame.gd" type="Script" id=2]
 [ext_resource path="res://Scenes/Buttons/SceneButton.tscn" type="PackedScene" id=3]
-[ext_resource path="res://locations/Laboratoria (2).jpg" type="Texture" id=5]
+[ext_resource path="res://locations/Laboratoria.jpg" type="Texture" id=4]
 
 [sub_resource type="Theme" id=2]
 default_font = ExtResource( 1 )
@@ -15,7 +15,7 @@ script = ExtResource( 2 )
 
 [node name="Sprite" type="Sprite" parent="Background"]
 position = Vector2( 962, 538 )
-texture = ExtResource( 5 )
+texture = ExtResource( 4 )
 
 [node name="Buttons" type="HBoxContainer" parent="."]
 anchor_right = 1.0
@@ -28,7 +28,7 @@ rect_min_size = Vector2( 30, 30 )
 custom_constants/separation = 150
 alignment = 1
 
-[node name="Craft2" parent="Buttons" instance=ExtResource( 3 )]
+[node name="Craft" parent="Buttons" instance=ExtResource( 3 )]
 margin_left = 0.0
 margin_top = 0.0
 margin_right = 300.0
@@ -38,7 +38,7 @@ theme = SubResource( 2 )
 custom_colors/font_color = Color( 0.729412, 0.733333, 0.12549, 1 )
 text = "Craft"
 
-[node name="Location2" parent="Buttons" instance=ExtResource( 3 )]
+[node name="Location" parent="Buttons" instance=ExtResource( 3 )]
 margin_left = 450.0
 margin_top = 0.0
 margin_right = 750.0
@@ -58,7 +58,7 @@ theme = SubResource( 2 )
 custom_colors/font_color = Color( 0.729412, 0.733333, 0.12549, 1 )
 text = "Ask Saveli"
 
-[node name="Menu2" parent="Buttons" instance=ExtResource( 3 )]
+[node name="Menu" parent="Buttons" instance=ExtResource( 3 )]
 margin_left = 1350.0
 margin_top = 0.0
 margin_right = 1650.0

@@ -1,16 +1,24 @@
 extends Node2D
 
+onready var craft = $Buttons/Craft
+onready var location = $Buttons/Location
+onready var question = $Buttons/Question
+onready var menu = $Buttons/Menu
 
-# Declare member variables here. Examples:
-# var a = 2
-# var b = "text"
-
-
-# Called when the node enters the scene tree for the first time.
 func _ready():
-	pass # Replace with function body.
+	craft.set_next_scene("res://Scenes/Craft.tscn")
+	craft.connect("pressed", self, "change_scene", [craft.scene_to_open])
+	location.connect("pressed", self, "toggle_menu",[location])
+	menu.connect("pressed", self, "toggle_menu",[menu])
+		
+		
+func change_scene(path):
+	SceneChanger.change_scene(path)
 
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-#func _process(delta):
-#	pass
+func toggle_menu(button):
+	if button == location:
+		var menus = get_node("/root/Ui/Locations")
+		menus.visible = true
+	elif button == menu:
+		var menus = get_node("/root/Ui/GameMenu")
+		menus.visible = true

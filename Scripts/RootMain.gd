@@ -8,4 +8,3 @@ func get_player():
 	
 func _ready():
 	player.popup.path_next(next_scene)
-	pass
