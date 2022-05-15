@@ -2,11 +2,13 @@ extends Control
 
 onready var loc = $Panel/ItemList
 onready var start = $Buttons/Start
+onready var retur = $Buttons/Return
 var next_location = ""
 
 func _ready():
 	loc.connect("item_selected", self, "set_next_location")
 	start.connect("pressed", self, "change_scene", [start])
+	retur.connect("pressed", self, "close_menu", [retur])
 
 func set_next_location(item):
 	var name_loc = text_item(item)
@@ -26,6 +28,9 @@ func set_next_location(item):
 func text_item(item):
 	var g = loc.get_item_text(item)
 	return g
+
+func close_menu(item):
+	self.visible = false
 
 func change_scene(item):
 	SceneChanger.change_scene(next_location)
