@@ -8,8 +8,9 @@ var maxItems = 0
 var inventory = {}
 var scalesItems = {}
 var atanorItems = {}
-var minerals = ["Coal", "Sulphur"]
+var minerals = ["Coal", "Sulfur"]
 var herbs = ["Nezabudka", "Romashka"]
+var other = ["GazSulf", "WaterSulf", "Bruh"]
 
 func _ready():
 	pass

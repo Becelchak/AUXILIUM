@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=2]
 
-[ext_resource path="res://items/Grasses/TestGrass.png" type="Texture" id=1]
+[ext_resource path="res://items/Grasses/Inventory/Romashka.png" type="Texture" id=1]
 [ext_resource path="res://Scripts/Item.gd" type="Script" id=2]
 
 [node name="Item" type="Node2D"]

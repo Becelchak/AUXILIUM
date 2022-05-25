@@ -8,6 +8,7 @@ onready var menu = $Buttons/Menu
 func _ready():
 	craft.set_next_scene("res://Scenes/Craft.tscn")
 	craft.connect("pressed", self, "change_scene", [craft.scene_to_open])
+	question.connect("pressed", self, "toggle_menu", [question])
 	location.connect("pressed", self, "toggle_menu",[location])
 	menu.connect("pressed", self, "toggle_menu",[menu])
 		
@@ -22,3 +23,7 @@ func toggle_menu(button):
 	elif button == menu:
 		var menus = get_node("/root/Ui/GameMenu")
 		menus.visible = true
+	elif button == question:
+		$Buttons.visible = false
+		$Background/Saveli.visible = true
+		$ItemsInfo.visible = true

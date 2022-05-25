@@ -22,11 +22,12 @@ margin_right = 401.0
 margin_bottom = 199.794
 
 [node name="Grid" type="GridContainer" parent="Scroll"]
-margin_right = 16.0
-margin_bottom = 36.0
+margin_right = 26.0
+margin_bottom = 46.0
 custom_constants/hseparation = 24
 columns = 9
 
 [node name="InventItem" parent="Scroll/Grid" instance=ExtResource( 2 )]
-margin_right = 16.0
+margin_right = 26.0
+margin_bottom = 46.0
 rect_scale = Vector2( 1, 1 )

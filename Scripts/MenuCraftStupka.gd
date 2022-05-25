@@ -25,11 +25,19 @@ func _ready():
 
 func toggle_menu(button):
 	var parent = button.get_parent().get_parent().get_parent()
+	$Panel/Stupka/Result.visible = false
+	$Panel/Stupka/LabelRect.visible = false
+	$Panel/Stupka/LabelRect/Fall.visible = false
+	$Panel/Stupka/LabelRect/Success.visible = false
 	parent.visible = false
 
 func set_reaction(button):
 	if button == atanor:
 		player.delete_item(item_now)
+		$Panel/Stupka/Result.visible = false
+		$Panel/Stupka/LabelRect.visible = false
+		$Panel/Stupka/LabelRect/Fall.visible = false
+		$Panel/Stupka/LabelRect/Success.visible = false
 		if item_now in player.atanorItems:
 			player.atanorItems[item_now][0] += 1
 		else:
@@ -37,6 +45,10 @@ func set_reaction(button):
 		update_item_lists()
 	elif button == scale:
 		player.delete_item(item_now)
+		$Panel/Stupka/Result.visible = false
+		$Panel/Stupka/LabelRect.visible = false
+		$Panel/Stupka/LabelRect/Fall.visible = false
+		$Panel/Stupka/LabelRect/Success.visible = false
 		if item_now in player.scalesItems:
 			player.scalesItems[item_now][0] += 1
 		else:
@@ -47,7 +59,16 @@ func set_reaction(button):
 		item_craft = result[0]
 		formul_craft = result[1]
 		concentrate_craft = int(result[2])
-		if item_now in player.atanorItems:
+		$Panel/Stupka/Result.texture = load("res://items/Grasses/Formuls/%s.png" % formul_craft)
+		$Panel/Stupka/Result.visible = true
+		$Panel/Stupka/LabelRect.visible = true
+		if(item_craft == "Bruh"):
+			$Panel/Stupka/LabelRect/Fall.visible = true
+			$Panel/Stupka/LabelRect/Success.visible = false
+		else:
+			$Panel/Stupka/LabelRect/Success.visible = true
+			$Panel/Stupka/LabelRect/Fall.visible = false
+		if item_craft in player.inventory.keys():
 			player.inventory[item_craft][0] += concentrate_craft
 		else:
 			player.inventory[item_craft] = [concentrate_craft, 40]
@@ -66,9 +87,19 @@ func update_item_lists():
 func craft_item(item):
 	if item in player.minerals:
 		if item == "Coal":
+			player.inventory[item][0] -= 1
+			update_item_lists()
 			return "Coal"
 		elif item == "Sulfur":
+			player.inventory[item][0] -= 1
+			update_item_lists()
 			return "Sulfur"
 	elif item in player.herbs:
 		if item == "Nezabudka":
-			return "Nezabudka_conc Flavon 5"
+			player.inventory[item][0] -= 1
+			update_item_lists()
+			return "Nezabudka_conc Magni 5"
+	else:
+		player.inventory[item][0] -= 1
+		update_item_lists()
+		return "Bruh X 1"

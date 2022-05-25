@@ -25,6 +25,7 @@ texture = ExtResource( 1 )
 position = Vector2( 1086, 582 )
 
 [node name="Scales" parent="Craft" instance=ExtResource( 2 )]
+visible = false
 position = Vector2( 1562, 648 )
 
 [node name="Stupka" parent="Craft" instance=ExtResource( 4 )]
@@ -34,9 +35,9 @@ position = Vector2( 585, 875 )
 position = Vector2( 1622, 901 )
 
 [node name="Buttons" type="VBoxContainer" parent="."]
-margin_left = 3.0
+margin_left = 10.0
 margin_top = 52.0
-margin_right = 283.0
+margin_right = 295.0
 margin_bottom = 539.0
 rect_min_size = Vector2( 150, 100 )
 size_flags_horizontal = 4
@@ -44,32 +45,32 @@ size_flags_vertical = 4
 custom_constants/separation = 90
 
 [node name="Water" parent="Buttons" instance=ExtResource( 7 )]
-margin_left = 37.0
+margin_left = 0.0
 margin_top = 0.0
-margin_right = 242.0
+margin_right = 285.0
 margin_bottom = 100.0
-rect_min_size = Vector2( 205, 100 )
+rect_min_size = Vector2( 285, 100 )
 size_flags_vertical = 4
 custom_constants/hseparation = -5
 custom_fonts/font = ExtResource( 6 )
-text = "Подлить воды"
+text = "Подлить воды в атанор"
 
-[node name="Ready" parent="Buttons" instance=ExtResource( 7 )]
-margin_left = 37.0
+[node name="Delete" parent="Buttons" instance=ExtResource( 7 )]
+margin_left = 0.0
 margin_top = 190.0
-margin_right = 242.0
+margin_right = 285.0
 margin_bottom = 280.0
-rect_min_size = Vector2( 205, 90 )
+rect_min_size = Vector2( 285, 90 )
 size_flags_vertical = 4
 custom_fonts/font = ExtResource( 6 )
-text = "Вылить содержимое"
+text = "Вылить содержимое атанора"
 
 [node name="Exit" parent="Buttons" instance=ExtResource( 7 )]
-margin_left = 37.0
+margin_left = 0.0
 margin_top = 370.0
-margin_right = 242.0
+margin_right = 285.0
 margin_bottom = 460.0
-rect_min_size = Vector2( 205, 90 )
+rect_min_size = Vector2( 285, 90 )
 size_flags_vertical = 4
 custom_fonts/font = ExtResource( 6 )
 text = "Закончить"
