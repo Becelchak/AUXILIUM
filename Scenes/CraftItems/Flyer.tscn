@@ -105,8 +105,7 @@ color = Color( 0.623529, 0.623529, 0.623529, 0.745098 )
 
 [node name="Result" type="Sprite" parent="Menu/Panel/Fyer"]
 visible = false
-position = Vector2( 4.04565, 5.95593 )
-rotation = -3.22735e-10
+position = Vector2( 3.97998, -2.08606 )
 scale = Vector2( 1.44286, 1.96401 )
 texture = ExtResource( 9 )
 flip_h = true

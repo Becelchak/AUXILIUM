@@ -92,6 +92,14 @@ func craft_item(item):
 		player.inventory[item][0] -= 1
 		update_item_lists()
 		return "SulfNatri Sulfat_natri 2"
+	elif item == "Koriaga" && player.inventory[item][0] >=3:
+		player.inventory[item][0] -= 3
+		update_item_lists()
+		return "Coal X 2"
+	elif item == "Romashka" && player.inventory[item][0] >= 10:
+		player.inventory[item][0] -= 10
+		update_item_lists()
+		return "Romashka_ashes Magni 1"
 	else:
 		player.inventory[item][0] -= 1
 		update_item_lists()

@@ -89,11 +89,15 @@ func craft_item(item):
 		if item == "Coal":
 			player.inventory[item][0] -= 1
 			update_item_lists()
-			return "Coal"
+			return "Coal X 1"
 		elif item == "Sulfur":
 			player.inventory[item][0] -= 1
 			update_item_lists()
-			return "Sulfur"
+			return "Sulfur X 1"
+		elif item == "Ferum":
+			player.inventory[item][0] -= 1
+			update_item_lists()
+			return "Ferum_conc X 2"
 	elif item in player.herbs:
 		if item == "Nezabudka":
 			player.inventory[item][0] -= 1

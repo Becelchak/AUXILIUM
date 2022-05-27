@@ -4,7 +4,7 @@ onready var player = get_node("/root/PlayerData")
 var maxItems = 4
 
 func _ready():
-	var items = ["Sulfur", "Nezabudka", "Coal"]
+	var items = ["Sulfur", "Coal", "Koriaga"]
 	player.setMaxItem(maxItems)
 	for i in range(maxItems):
 		randomize()

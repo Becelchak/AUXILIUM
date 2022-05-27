@@ -102,7 +102,7 @@ func craft_item(item, count):
 			update_item_lists()
 			return "%s X 1" %item[0][0]
 	elif count == 2:
-		if item[0].has("Sulfur") && item[1].has("Ferum") || item[1].has("Sulfur") && item[0].has("Ferum") :
+		if item[0].has("Sulfur") && item[1].has("Ferum_conc") || item[1].has("Sulfur") && item[0].has("Ferum_conc") :
 			for i in item.size():
 				var its = item[i][0]
 				var couts = int(item[i][1])
