@@ -5,6 +5,7 @@ onready var location = $Buttons/Location
 onready var question = $Buttons/Question
 onready var menu = $Buttons/Menu
 
+onready var requestSugar = $ItemsInfo/Buttons2/Request
 onready var itemsSelect = $ItemsInfo/Buttons2/More
 onready var itemsReturn = $ItemsInfo/Buttons2/Return
 onready var items1 = $ItemsInfo/Plashka/ItemsMenu/Grid/ColorRect/AllCategoris
@@ -12,10 +13,14 @@ onready var items2 = $ItemsInfo/Plashka/ItemsMenu/Grid/ColorRect/LocItems
 onready var items3 = $ItemsInfo/Plashka/ItemsMenu/Grid/ColorRect/CraftItems
 onready var description = $ItemsInfo/Discraption
 
+onready var player = get_node("/root/PlayerData")
+
 var item_now = ""
 var item_show = ""
 
 func _ready():
+	if player.Is_last_quest:
+		requestSugar.visible = true
 	craft.set_next_scene("res://Scenes/Craft.tscn")
 	craft.connect("pressed", self, "change_scene", [craft.scene_to_open])
 	question.connect("pressed", self, "toggle_menu", [question])
@@ -26,6 +31,7 @@ func _ready():
 	items2.connect("item_selected", self, "set_show_item", [items2])
 	items3.connect("item_selected", self, "set_show_item", [items3])
 	itemsSelect.connect("pressed", self, "toggle_menu",[itemsSelect])
+	requestSugar.connect("pressed", self, "toggle_menu",[requestSugar])
 	itemsReturn.connect("pressed", self, "toggle_menu",[itemsReturn])
 		
 		
@@ -36,6 +42,8 @@ func toggle_menu(button):
 	if button == location:
 		var menus = get_node("/root/Ui/Locations")
 		menus.visible = true
+	elif button == requestSugar:
+		player.inventory["Sugar"] = [1,5]
 	elif button == menu:
 		var menus = get_node("/root/Ui/GameMenu")
 		menus.visible = true
@@ -84,7 +92,7 @@ func set_show_item(item, items):
 	elif item_show == "HydroAcid":
 		description.text = "Описание: Бесцветная, прозрачная,\n едкая жидкость, «дымящаяся» на воздухе.\n \n Получение: полить повареную соль\nконцентрированной серной кислотой"
 	elif item_show == "SulfNatri":
-		description.text = "Описание: Бесцветные кристаллы из которых\n получают Глауберову соль.\n \n Получение: порция поваренной соли\n нагретых в жаровне"
+		description.text = "Описание: Бесцветные кристаллы из которых\n получают Глауберову соль.\n \n Получение: из порции поваренной соли\n нагретой в жаровне"
 	elif item_show == "Chlorid_Natrium":
 		description.text = "Описание: Чистый хлорид натрия представляет\n собой бесцветные кристаллы, а с примесями\n принимает различные оттенки.\n \n Получение: можно найти в шахте"
 	elif item_show == "Ashes":
@@ -98,4 +106,16 @@ func set_show_item(item, items):
 	elif item_show == "Koriaga":
 		description.text ="Описание: Обычная коряга, отпавшая от дерева.\n Пригодится чтобы топить печь или получить уголь \n \n Получение: можно найти в лесу и болоте"
 	elif item_show == "Romashka_ashes":
-		description.text = "Описание: зола из ромашки, из которой можно\n выделить магний.\n \n Получение: сжечь 10 ромашек"
+		description.text = "Описание: Зола из ромашки, из которой можно\n выделить магний.\n \n Получение: сжечь 10 ромашек"
+	elif item_show == "Wood_conc":
+		description.text = "Описание: Измельченая древесина, используется\n и как топливо и как сырье в производстве.\n \n Получение: растолочь корягу в ступке"
+	elif item_show == "Landish":
+		description.text = "Описание: Ландыш - травянистое цветковое растение,\n содержит вещества для стимуляции расширения артерий.\n \n Получение: можно найти на поляне "
+	elif item_show == "Landish_ashes":
+		description.text = "Описание: Зола из ландыша, в которой можно\n выделить фосфор.\n \n Получение: сжечь 10 ландышей"
+	elif item_show == "Celuloza":
+		description.text = "Описание: Целлюлоза - белое твёрдое, стойкое вещество,\n не разрушается при нагревании и является горючим.\n \n Получение: предварительно нагреть в атаноре воду,\n после в произвольном порядке добавляя в нее две порции\n древесной щепы и одну порцию раствора сульфита натрия "
+	elif item_show == "Nezabudka_Infusion":
+		description.text = "Описание: Отвар из незабудки - средство народной медицины,\n помогающее от кожной сыпи и зуда. \n \n Получение: две порции измельченной незабудки смешать\n с водой и поварить некоторое время."
+	elif item_show == "Romashka_Infusion":
+		description.text = "Описание: Отвар из ромашки - средство от бессоницы и мигрени,\n иногда от простуды и боли в зубах.\n \n Получение: три порции измельченной ромашки смешать\n с водой и поварить некоторое время"

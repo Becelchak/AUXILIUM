@@ -9,8 +9,10 @@ var inventory = {}
 var scalesItems = {}
 var atanorItems = {}
 var minerals = ["Coal", "Sulfur", "Ferum","Chlorid_Natrium"]
-var herbs = ["Nezabudka", "Romashka"]
+var herbs = ["Nezabudka", "Romashka","Koriaga", "Landish", "Limon", "Zemlianika"]
 var other = ["GazSulf", "WaterSulf", "Bruh"]
+
+var Is_last_quest = false
 
 func _ready():
 	pass

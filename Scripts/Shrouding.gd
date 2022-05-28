@@ -4,11 +4,11 @@ onready var player = get_node("/root/PlayerData")
 var maxItems = 8
 
 func _ready():
-	var items = ["Romashka", "Nezabudka"]
+	var items = ["Romashka", "Nezabudka", "Landish"]
 	player.setMaxItem(maxItems)
 	for i in range(maxItems):
 		randomize()
-		var name = int(rand_range(0,2))
+		var name = int(rand_range(0,3))
 		var new_item = item.instance()
 		$Items.add_child(new_item)
 		new_item.set_item(items[name])

@@ -102,7 +102,19 @@ func craft_item(item):
 		if item == "Nezabudka":
 			player.inventory[item][0] -= 1
 			update_item_lists()
-			return "Nezabudka_conc Magni 5"
+			return "Nezabudka_conc Magni 2"
+		elif item == "Koriaga":
+			player.inventory[item][0] -= 1
+			update_item_lists()
+			return "Wood_conc X 2"
+		elif item == "Romashka":
+			player.inventory[item][0] -= 1
+			update_item_lists()
+			return "Romashka_conc Magni 1"
+		elif item == "Limon" && player.inventory[item][0] == 2:
+			player.inventory[item][0] -= 2
+			update_item_lists()
+			return "Limon_acid Calium 1"
 	else:
 		player.inventory[item][0] -= 1
 		update_item_lists()

@@ -1,4 +1,4 @@
-[gd_scene load_steps=29 format=2]
+[gd_scene load_steps=35 format=2]
 
 [ext_resource path="res://addons/dialogic/Example Assets/Fonts/DefaultFont.tres" type="DynamicFont" id=1]
 [ext_resource path="res://Scripts/MainGame.gd" type="Script" id=2]
@@ -26,6 +26,12 @@
 [ext_resource path="res://items/Grasses/Inventory/Bruh.png" type="Texture" id=24]
 [ext_resource path="res://items/Grasses/Koriaga.png" type="Texture" id=25]
 [ext_resource path="res://items/Grasses/Inventory/Romashka_ashes.png" type="Texture" id=26]
+[ext_resource path="res://items/Grasses/Inventory/Wood_conc.png" type="Texture" id=27]
+[ext_resource path="res://items/Grasses/Inventory/Landish.png" type="Texture" id=28]
+[ext_resource path="res://items/Grasses/Inventory/Landish_ashes.png" type="Texture" id=29]
+[ext_resource path="res://items/Grasses/Inventory/Celuloza.png" type="Texture" id=30]
+[ext_resource path="res://items/Grasses/Inventory/Nezabudka_Infusion.png" type="Texture" id=31]
+[ext_resource path="res://items/Grasses/Inventory/Romashka_Infusion.png" type="Texture" id=32]
 
 [sub_resource type="Theme" id=3]
 default_font = ExtResource( 5 )
@@ -179,7 +185,7 @@ custom_constants/vseparation = 30
 custom_constants/line_separation = 5
 custom_constants/icon_margin = 5
 custom_constants/hseparation = 5
-items = [ "Nezabudka", ExtResource( 7 ), false, "Romashka", ExtResource( 13 ), false, "Ferum", ExtResource( 9 ), false, "Chlorid_Natrium", ExtResource( 11 ), false, "Sulfur", ExtResource( 8 ), false, "Coal", ExtResource( 6 ), false, "Koriaga", ExtResource( 25 ), false ]
+items = [ "Nezabudka", ExtResource( 7 ), false, "Romashka", ExtResource( 13 ), false, "Ferum", ExtResource( 9 ), false, "Chlorid_Natrium", ExtResource( 11 ), false, "Sulfur", ExtResource( 8 ), false, "Coal", ExtResource( 6 ), false, "Koriaga", ExtResource( 25 ), false, "Landish", ExtResource( 28 ), false ]
 
 [node name="CraftItems" type="ItemList" parent="ItemsInfo/Plashka/ItemsMenu/Grid/ColorRect"]
 visible = false
@@ -192,37 +198,47 @@ custom_constants/vseparation = 30
 custom_constants/line_separation = 5
 custom_constants/icon_margin = 5
 custom_constants/hseparation = 5
-items = [ "GazSulf", ExtResource( 16 ), false, "WaterSulf", ExtResource( 18 ), false, "SulfAcid", ExtResource( 20 ), false, "HydroAcid", ExtResource( 19 ), false, "SulFer", ExtResource( 21 ), false, "SulfNatri", ExtResource( 22 ), false, "Ashes", ExtResource( 23 ), false, "Nezabudka_conc", ExtResource( 17 ), false, "Bruh", ExtResource( 24 ), false, "Romashka_ashes", ExtResource( 26 ), false ]
+items = [ "GazSulf", ExtResource( 16 ), false, "WaterSulf", ExtResource( 18 ), false, "SulfAcid", ExtResource( 20 ), false, "HydroAcid", ExtResource( 19 ), false, "SulFer", ExtResource( 21 ), false, "SulfNatri", ExtResource( 22 ), false, "Ashes", ExtResource( 23 ), false, "Nezabudka_conc", ExtResource( 17 ), false, "Bruh", ExtResource( 24 ), false, "Romashka_ashes", ExtResource( 26 ), false, "Wood_conc", ExtResource( 27 ), false, "Landish_ashes", ExtResource( 29 ), false, "Celuloza", ExtResource( 30 ), false, "Nezabudka_Infusion", ExtResource( 31 ), false, "Romashka_Infusion", ExtResource( 32 ), false ]
 
 [node name="Buttons2" type="HBoxContainer" parent="ItemsInfo"]
 anchor_top = 1.0
 anchor_right = 1.0
 anchor_bottom = 1.0
-margin_left = 422.0
-margin_top = -250.0
-margin_right = 242.0
-margin_bottom = -182.0
+margin_left = 254.0
+margin_top = -246.0
+margin_right = 244.0
+margin_bottom = -178.0
 rect_min_size = Vector2( 30, 30 )
 custom_constants/separation = 20
 alignment = 1
 
 [node name="More" parent="ItemsInfo/Buttons2" instance=ExtResource( 3 )]
-margin_left = 0.0
+margin_left = 85.0
 margin_top = 0.0
-margin_right = 150.0
+margin_right = 235.0
 margin_bottom = 68.0
 theme = SubResource( 2 )
 custom_colors/font_color = Color( 0.729412, 0.733333, 0.12549, 1 )
 text = "Спросить"
 
 [node name="Return" parent="ItemsInfo/Buttons2" instance=ExtResource( 3 )]
-margin_left = 170.0
+margin_left = 255.0
 margin_top = 0.0
-margin_right = 320.0
+margin_right = 405.0
 margin_bottom = 68.0
 theme = SubResource( 2 )
 custom_colors/font_color = Color( 0.729412, 0.733333, 0.12549, 1 )
 text = "Назад"
+
+[node name="Request" parent="ItemsInfo/Buttons2" instance=ExtResource( 3 )]
+visible = false
+margin_left = 340.0
+margin_top = 0.0
+margin_right = 490.0
+margin_bottom = 68.0
+theme = SubResource( 2 )
+custom_colors/font_color = Color( 0.729412, 0.733333, 0.12549, 1 )
+text = "Взять сахар"
 
 [node name="Discraption" type="Label" parent="ItemsInfo"]
 margin_left = 25.0
