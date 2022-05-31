@@ -1,6 +1,7 @@
 extends Node2D
 
 onready var player = get_node("/root/PlayerData")
+onready var ui = get_node("/root/Ui")
 onready var next_scene = "res://Scenes/Chapter_II_next.tscn"
 
 func get_player():

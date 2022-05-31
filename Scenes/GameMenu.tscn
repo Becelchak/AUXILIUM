@@ -1,11 +1,10 @@
-[gd_scene load_steps=10 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://items/UI/Menu-plashka.png" type="Texture" id=1]
 [ext_resource path="res://addons/dialogic/Example Assets/Fonts/DefaultFont.tres" type="DynamicFont" id=2]
 [ext_resource path="res://Scripts/GameMenu.gd" type="Script" id=3]
 [ext_resource path="res://items/UI/Popup.png" type="Texture" id=4]
 [ext_resource path="res://addons/dialogic/Example Assets/Fonts/NameFont.tres" type="DynamicFont" id=5]
-[ext_resource path="res://addons/dialogic/Example Assets/Fonts/DefaultBoldFont.tres" type="DynamicFont" id=6]
 [ext_resource path="res://Scripts/Setting.gd" type="Script" id=7]
 
 [sub_resource type="Theme" id=1]
@@ -53,21 +52,21 @@ custom_constants/separation = 90
 margin_right = 400.0
 margin_bottom = 150.0
 rect_min_size = Vector2( 0, 150 )
-text = "Continue game"
+text = "Продолжить игру"
 
 [node name="Setting" type="Button" parent="Panel/Buttons"]
 margin_top = 240.0
 margin_right = 400.0
 margin_bottom = 390.0
 rect_min_size = Vector2( 0, 150 )
-text = "Setting"
+text = "Настройки"
 
 [node name="Exit" type="Button" parent="Panel/Buttons"]
 margin_top = 480.0
 margin_right = 400.0
 margin_bottom = 630.0
 rect_min_size = Vector2( 0, 150 )
-text = "Exit the game"
+text = "Выйти из игры"
 
 [node name="Setting" type="Control" parent="."]
 visible = false
@@ -105,7 +104,6 @@ text = "
 align = 1
 valign = 2
 uppercase = true
-percent_visible = -0.1
 
 [node name="Inventory" type="Label" parent="Setting/VBoxContainer"]
 margin_top = 130.0
@@ -131,6 +129,6 @@ margin_top = 868.0
 margin_right = 1420.0
 margin_bottom = 928.0
 custom_colors/font_color = Color( 0.901961, 1, 0.439216, 1 )
-custom_fonts/font = ExtResource( 6 )
-text = "Return"
+custom_fonts/font = ExtResource( 2 )
+text = "Назад"
 flat = true

@@ -57,6 +57,8 @@ func set_reaction(button):
 		item_craft = result[0]
 		formul_craft = result[1]
 		concentrate_craft = int(result[2])
+		player.update_main_quest(item_craft)
+		player.check_progress()
 		$Panel/Fyer/Result.texture = load("res://items/Grasses/Formuls/%s.png" % formul_craft)
 		$Panel/Fyer/Result.visible = true
 		$Panel/Fyer/LabelRect.visible = true
@@ -84,27 +86,28 @@ func update_item_lists():
 	stupka_invent.get_child(1).get_child(0).get_child(0)._ready()
 
 func craft_item(item):
-	if item == "Sulfur":
-		player.inventory[item][0] -= 1
-		update_item_lists()
-		return "GazSulf Dioxid_sulfur 2"
-	elif item == "Chlorid_Natrium":
-		player.inventory[item][0] -= 1
-		update_item_lists()
-		return "SulfNatri Sulfat_natri 2"
-	elif item == "Koriaga" && player.inventory[item][0] >= 3:
-		player.inventory[item][0] -= 3
-		update_item_lists()
-		return "Coal X 2"
-	elif item == "Romashka" && player.inventory[item][0] >= 10:
-		player.inventory[item][0] -= 10
-		update_item_lists()
-		return "Romashka_ashes Magni 1"
-	elif item == "Landish" && player.inventory[item][0] >= 10:
-		player.inventory[item][0] -= 10
-		update_item_lists()
-		return "Landish_ashes Phosphorus 1"
-	else:
-		player.inventory[item][0] -= 1
-		update_item_lists()
-		return "Ashes Calcium 1"
+	if item != null:
+		if item == "Sulfur":
+			player.inventory[item][0] -= 1
+			update_item_lists()
+			return "GazSulf Dioxid_sulfur 2"
+		elif item == "Chlorid_Natrium":
+			player.inventory[item][0] -= 1
+			update_item_lists()
+			return "SulfNatri Sulfat_natri 2"
+		elif item == "Koriaga" && player.inventory[item][0] >= 3:
+			player.inventory[item][0] -= 3
+			update_item_lists()
+			return "Coal Carbon 2"
+		elif item == "Romashka" && player.inventory[item][0] >= 10:
+			player.inventory[item][0] -= 10
+			update_item_lists()
+			return "Romashka_ashes Magni 1"
+		elif item == "Landish" && player.inventory[item][0] >= 10:
+			player.inventory[item][0] -= 10
+			update_item_lists()
+			return "Landish_ashes Phosphorus 1"
+		else:
+			player.inventory[item][0] -= 1
+			update_item_lists()
+			return "Ashes Calсium 1"

@@ -59,6 +59,8 @@ func set_reaction(button):
 		item_craft = result[0]
 		formul_craft = result[1]
 		concentrate_craft = int(result[2])
+		player.update_main_quest(item_craft)
+		player.check_progress()
 		$Panel/Stupka/Result.texture = load("res://items/Grasses/Formuls/%s.png" % formul_craft)
 		$Panel/Stupka/Result.visible = true
 		$Panel/Stupka/LabelRect.visible = true
@@ -85,37 +87,42 @@ func update_item_lists():
 	fyer_invent.get_child(1).get_child(0).get_child(0)._ready()
 
 func craft_item(item):
-	if item in player.minerals:
-		if item == "Coal":
+	if item != null:
+		if item in player.minerals:
+			if item == "Coal":
+				player.inventory[item][0] -= 1
+				update_item_lists()
+				return "Coal Carbon 1"
+			elif item == "Sulfur":
+				player.inventory[item][0] -= 1
+				update_item_lists()
+				return "Sulfur Sulfur 1"
+			elif item == "Ferum":
+				player.inventory[item][0] -= 1
+				update_item_lists()
+				return "Ferum_conc X 2"
+		elif item in player.herbs:
+			if item == "Nezabudka":
+				player.inventory[item][0] -= 1
+				update_item_lists()
+				return "Nezabudka_conc Magni 2"
+			elif item == "Koriaga":
+				player.inventory[item][0] -= 1
+				update_item_lists()
+				return "Wood_conc X 2"
+			elif item == "Romashka":
+				player.inventory[item][0] -= 1
+				update_item_lists()
+				return "Romashka_conc Magni 1"
+			elif item == "Landish":
+				player.inventory[item][0] -= 1
+				update_item_lists()
+				return "Landish_conc Phosphorus 1"
+			elif item == "Limon" && player.inventory[item][0] == 2:
+				player.inventory[item][0] -= 2
+				update_item_lists()
+				return "Limon_acid Calium 1"
+		else:
 			player.inventory[item][0] -= 1
 			update_item_lists()
-			return "Coal X 1"
-		elif item == "Sulfur":
-			player.inventory[item][0] -= 1
-			update_item_lists()
-			return "Sulfur X 1"
-		elif item == "Ferum":
-			player.inventory[item][0] -= 1
-			update_item_lists()
-			return "Ferum_conc X 2"
-	elif item in player.herbs:
-		if item == "Nezabudka":
-			player.inventory[item][0] -= 1
-			update_item_lists()
-			return "Nezabudka_conc Magni 2"
-		elif item == "Koriaga":
-			player.inventory[item][0] -= 1
-			update_item_lists()
-			return "Wood_conc X 2"
-		elif item == "Romashka":
-			player.inventory[item][0] -= 1
-			update_item_lists()
-			return "Romashka_conc Magni 1"
-		elif item == "Limon" && player.inventory[item][0] == 2:
-			player.inventory[item][0] -= 2
-			update_item_lists()
-			return "Limon_acid Calium 1"
-	else:
-		player.inventory[item][0] -= 1
-		update_item_lists()
-		return "Bruh X 1"
+			return "Bruh X 1"

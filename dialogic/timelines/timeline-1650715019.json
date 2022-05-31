@@ -59,7 +59,7 @@
 			"character": "character-1650178976.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "Ну, вот тебе все необходимое для начала.\nПерво-наперво тебе нужно поставить котелок на печку и налить водицы. Она если что в корыте под столом.\nЗатем тебе надо перемолоть вот эту(название травы) и эту траву(название травы). По ОЧЕРЕДИ!\nКак перетрешь - ссыпай травку в котел и начинай дергать лепестки с последней травы(название травы).\nКак всех лепестков ее лишишь, перемалывай в ступке и кидай в котелок.\nПомешать не забудь потом!"
+			"text": "Ну, вот тебе все необходимое для начала.\nПерво-наперво тебе нужно  налить водицы в колбу на атаноре. Водица если что в корыте под столом. Два черпака будет в самый раз.\nЗатем тебе надо перемолоть все эти ромашки. Их лепестки и сердцевинки.\nПотом в воду их спускаешь. Как постоит немного, перемешай, да хорошенько!"
 		},
 		{
 			"character": "character-1650187446.json",
@@ -71,7 +71,7 @@
 			"character": "character-1650178976.json",
 			"event_id": "dialogic_001",
 			"portrait": "Савелий-заглушка удивление",
-			"text": "Я то? Я за банками чистыми в подвал! Ну, с Богом!"
+			"text": "Я то? Я за баночкой чистой в подвал! Ну, с Богом!"
 		},
 		{
 			"animation": "4-fade_out.gd",
@@ -117,69 +117,11 @@
 			"character": "character-1650209144.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "Вы приступили к варке зелья.\n*Реализовать варку*"
+			"text": "Вы приступили к варке зелья."
 		},
 		{
-			"character": "character-1650209144.json",
-			"event_id": "dialogic_001",
-			"portrait": "",
-			"text": "Спустя несколько минут вода заволокла пенка и она уже стала бурлить"
-		},
-		{
-			"event_id": "dialogic_024",
-			"set_theme": "theme-1650186455.cfg"
-		},
-		{
-			"animation": "1-fade_in.gd",
-			"animation_length": 1,
-			"change_mirror_portrait": false,
-			"change_z_index": false,
-			"character": "character-1650178976.json",
-			"event_id": "dialogic_002",
-			"mirror_portrait": false,
-			"portrait": "Default",
-			"portrait_definition": "",
-			"position": {
-				"0": false,
-				"1": false,
-				"2": false,
-				"3": false,
-				"4": true
-			},
-			"type": 0,
-			"z_index": 0
-		},
-		{
-			"character": "character-1650178976.json",
-			"event_id": "dialogic_001",
-			"portrait": "Савелий-заглушка радость",
-			"text": "О как бурчит! Варево что надо!"
-		},
-		{
-			"character": "character-1650187446.json",
-			"event_id": "dialogic_001",
-			"portrait": "",
-			"text": "Пахнет не очень...Да и ступкой непривычно работать"
-		},
-		{
-			"character": "character-1650178976.json",
-			"event_id": "dialogic_001",
-			"portrait": "Савелий-заглушка удивление",
-			"text": "Ишь! Сказал же, варево что надо, говорю же!\nТы лучше давай бери баночку и сито. Просаживать будем твой отвар."
-		},
-		{
-			"event_id": "dialogic_024",
-			"set_theme": "default-theme.cfg"
-		},
-		{
-			"character": "",
-			"event_id": "dialogic_001",
-			"portrait": "",
-			"text": "Вы сделали свое первое зелье!\n*Добавить значок*"
-		},
-		{
-			"change_timeline": "timeline-1650715827.json",
-			"event_id": "dialogic_020"
+			"change_scene": "res://Scenes/Craft.tscn",
+			"event_id": "dialogic_041"
 		}
 	],
 	"metadata": {

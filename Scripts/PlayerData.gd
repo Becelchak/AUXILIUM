@@ -12,7 +12,12 @@ var minerals = ["Coal", "Sulfur", "Ferum","Chlorid_Natrium"]
 var herbs = ["Nezabudka", "Romashka","Koriaga", "Landish", "Limon", "Zemlianika"]
 var other = ["GazSulf", "WaterSulf", "Bruh"]
 
-var Is_last_quest = false
+onready var main_quest = [["GazSulf",0],["WaterSulf",0],["SulfAcid",0],["HydroAcid",0],["Nezabudka_Infusion",0],["Landish_Infusion",0],["Celuloza",0],["SulFer",0],["SulfNatri",0], ["Juice",0]]
+
+onready var Is_last_quest = false
+onready var Need_new_Chapter = false
+onready var Is_game_finish = false
+onready var Is_tutorial = true
 
 func _ready():
 	pass
@@ -45,3 +50,19 @@ func delete_item(item):
 		inventory[item][0] -= 1
 	else:
 		pass
+
+func check_progress():
+	var count = 0
+	for i in main_quest.size():
+		count += main_quest[i][1]
+	if count == 9:
+		Is_last_quest = true
+		Need_new_Chapter = true
+	elif count == 10:
+		Is_game_finish = true
+
+func update_main_quest(item):
+	if item != "Bruh":
+		for j in main_quest.size():
+			if main_quest[j][0] == item && main_quest[j][1] == 0:
+				main_quest[j][1] = 1

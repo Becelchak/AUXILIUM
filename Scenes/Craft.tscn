@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=2]
+[gd_scene load_steps=13 format=2]
 
 [ext_resource path="res://locations/CraftTable.jpg" type="Texture" id=1]
 [ext_resource path="res://Scenes/CraftItems/Scales.tscn" type="PackedScene" id=2]
@@ -8,6 +8,12 @@
 [ext_resource path="res://addons/dialogic/Example Assets/Fonts/DefaultFont.tres" type="DynamicFont" id=6]
 [ext_resource path="res://Scenes/Buttons/SceneButton.tscn" type="PackedScene" id=7]
 [ext_resource path="res://Scripts/RootCraft.gd" type="Script" id=8]
+[ext_resource path="res://addons/dialogic/Example Assets/Fonts/DefaultBoldFont.tres" type="DynamicFont" id=9]
+[ext_resource path="res://addons/dialogic/Example Assets/Fonts/NameFont.tres" type="DynamicFont" id=10]
+[ext_resource path="res://items/UI/Popup.png" type="Texture" id=11]
+
+[sub_resource type="Theme" id=1]
+default_font = ExtResource( 10 )
 
 [node name="Root" type="Node2D"]
 script = ExtResource( 8 )
@@ -74,3 +80,121 @@ rect_min_size = Vector2( 285, 90 )
 size_flags_vertical = 4
 custom_fonts/font = ExtResource( 6 )
 text = "Закончить"
+
+[node name="Help" type="Button" parent="."]
+visible = false
+margin_left = 1832.0
+margin_top = 15.0
+margin_right = 1908.0
+margin_bottom = 83.0
+custom_constants/hseparation = 40
+custom_fonts/font = ExtResource( 9 )
+text = "?"
+
+[node name="HelpMenu" type="Control" parent="."]
+visible = false
+margin_right = 40.0
+margin_bottom = 40.0
+
+[node name="ColorRect" type="ColorRect" parent="HelpMenu"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 250.0
+margin_top = 57.0
+margin_right = 1714.0
+margin_bottom = 950.0
+color = Color( 0.0705882, 0.101961, 0.0705882, 0.92549 )
+
+[node name="Setting" type="Control" parent="HelpMenu"]
+light_mask = 3
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 46.0
+margin_top = 16.0
+margin_right = 46.0
+margin_bottom = 16.0
+
+[node name="TextureRect" type="TextureRect" parent="HelpMenu/Setting"]
+margin_left = 457.0
+margin_top = 94.0
+margin_right = 1477.0
+margin_bottom = 909.0
+texture = ExtResource( 11 )
+expand = true
+
+[node name="VBoxContainer" type="VBoxContainer" parent="HelpMenu/Setting"]
+margin_left = 493.0
+margin_top = 112.0
+margin_right = 1483.0
+margin_bottom = 887.0
+rect_min_size = Vector2( 700, 80 )
+theme = SubResource( 1 )
+custom_constants/separation = 50
+
+[node name="Title" type="Label" parent="HelpMenu/Setting/VBoxContainer"]
+margin_right = 750.0
+margin_bottom = 80.0
+rect_min_size = Vector2( 750, 80 )
+size_flags_horizontal = 0
+custom_colors/font_color = Color( 0.901961, 1, 0.439216, 1 )
+custom_colors/font_color_shadow = Color( 0.20118, 0.265625, 0.187805, 1 )
+text = "
+Справка"
+align = 1
+valign = 2
+uppercase = true
+
+[node name="Inventory" type="Label" parent="HelpMenu/Setting/VBoxContainer"]
+margin_top = 130.0
+margin_right = 750.0
+margin_bottom = 210.0
+rect_min_size = Vector2( 750, 80 )
+size_flags_horizontal = 0
+text = "Вам требуется сделать \"Отвар ромашки\". 
+Собранных вами ромашек хватит только на 1 порцию."
+valign = 1
+
+[node name="Dialog" type="Label" parent="HelpMenu/Setting/VBoxContainer"]
+margin_top = 260.0
+margin_right = 985.0
+margin_bottom = 537.0
+rect_min_size = Vector2( 750, 80 )
+size_flags_horizontal = 0
+text = "Рецепт: 
+1) Перемолоть все 3 ромашки в ступке и получить \"Концентрат ромашки\"
+      3 штуки
+2)Положить их в атанор через ступку или жаровню кнопкой
+    \"положить в атанор\"
+3)Подлить воды в атанор дважды (Количество воды должно быть х4)
+4) Смешать ингредиенты в атаноре одноименной кнопкой"
+valign = 1
+
+[node name="Inventory2" type="Label" parent="HelpMenu/Setting/VBoxContainer"]
+margin_top = 587.0
+margin_right = 750.0
+margin_bottom = 667.0
+rect_min_size = Vector2( 750, 80 )
+size_flags_horizontal = 0
+text = "Если вы сделали что-то не так, то нажмите кнопку 
+\"Начать сначала\""
+valign = 1
+
+[node name="Return" type="Button" parent="HelpMenu/Setting"]
+margin_left = 1324.0
+margin_top = 804.0
+margin_right = 1444.0
+margin_bottom = 864.0
+custom_colors/font_color = Color( 0.901961, 1, 0.439216, 1 )
+custom_fonts/font = ExtResource( 6 )
+text = "Назад"
+flat = true
+
+[node name="Repeat" type="Button" parent="HelpMenu/Setting"]
+margin_left = 547.0
+margin_top = 811.0
+margin_right = 803.0
+margin_bottom = 871.0
+custom_colors/font_color = Color( 0.901961, 1, 0.439216, 1 )
+custom_fonts/font = ExtResource( 6 )
+text = "Начать сначала"
+flat = true

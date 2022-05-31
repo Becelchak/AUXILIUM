@@ -11,6 +11,7 @@ onready var itemsReturn = $ItemsInfo/Buttons2/Return
 onready var items1 = $ItemsInfo/Plashka/ItemsMenu/Grid/ColorRect/AllCategoris
 onready var items2 = $ItemsInfo/Plashka/ItemsMenu/Grid/ColorRect/LocItems
 onready var items3 = $ItemsInfo/Plashka/ItemsMenu/Grid/ColorRect/CraftItems
+onready var items4 = $ItemsInfo/Plashka/ItemsMenu/Grid/ColorRect/Progress
 onready var description = $ItemsInfo/Discraption
 
 onready var player = get_node("/root/PlayerData")
@@ -55,8 +56,14 @@ func toggle_menu(button):
 		if item_now == "Добываемые ингредиенты":
 			items2.visible = true
 			items3.visible = false
-		elif item_now == "Рукотворные ингредиенты":
+			items4.visible = false
+		elif item_now == "Рукотворные ингредиенты (Растворы)":
 			items3.visible = true
+			items2.visible = false
+			items4.visible = false
+		elif item_now == "Прогресс испытания":
+			items4.visible = true
+			items3.visible = false
 			items2.visible = false
 	elif button == itemsReturn:
 		if items2.visible == true:
@@ -110,7 +117,7 @@ func set_show_item(item, items):
 	elif item_show == "Wood_conc":
 		description.text = "Описание: Измельченая древесина, используется\n и как топливо и как сырье в производстве.\n \n Получение: растолочь корягу в ступке"
 	elif item_show == "Landish":
-		description.text = "Описание: Ландыш - травянистое цветковое растение,\n содержит вещества для стимуляции расширения артерий.\n \n Получение: можно найти на поляне "
+		description.text = "Описание: Ландыш - травянистое цветковое растение,\n содержит вещества для стимуляции расширения артерий.\n Ядовит \n \n Получение: можно найти на поляне "
 	elif item_show == "Landish_ashes":
 		description.text = "Описание: Зола из ландыша, в которой можно\n выделить фосфор.\n \n Получение: сжечь 10 ландышей"
 	elif item_show == "Celuloza":
@@ -119,3 +126,21 @@ func set_show_item(item, items):
 		description.text = "Описание: Отвар из незабудки - средство народной медицины,\n помогающее от кожной сыпи и зуда. \n \n Получение: две порции измельченной незабудки смешать\n с водой и поварить некоторое время."
 	elif item_show == "Romashka_Infusion":
 		description.text = "Описание: Отвар из ромашки - средство от бессоницы и мигрени,\n иногда от простуды и боли в зубах.\n \n Получение: три порции измельченной ромашки смешать\n с водой и поварить некоторое время"
+	elif item_show == "Zemlianika":
+		description.text = "Описание: Земляника - травянистое растение,\n чьи плоды произрастают в одноименных ягодах.\n Хорошее лакомство любому кто зайдет в лес.\n \n Получение: можно найти в лесу, если вам это требуется"
+	elif item_show == "Limon": 
+		description.text = "Описание: Лимон - растение рода Цитрус.\n Произростает в субтропическом климате,\n а потому в местных краях редкий гость. \n \n Получение: может произростать в огороде,\n если Савелий хорошо его попросит."
+	elif item_show == "Ferum_conc":
+		description.text = "Описание: Смесь измельченного железа.\n \n Получение: растолочь кусок железа в ступке,\n насколько хватит сил."
+	elif item_show == "Juice":
+		description.text = "Описание: Компот - сок из ягоды или фруктов,\n смешанных в кипящей воде с последующим остыванием. \nПолучение: строго заранее налить воды и подогреть ее,\nпосле чего подлить лимонной кислоты, а уже следом сироп,\nполученный из варки необходимых ягод или фруктов.\nВ конце засыпать сахар и перемешать."
+	elif item_show == "Limon_acid":
+		description.text = "Описание: Лимонная кислота - универсальное средство,\n нашедшее применение в кулинарии.\n Кислота средней силы.\n \n Получение: растолочь лимон"
+	elif item_show == "Zemlianika_sirop":
+		description.text = "Описание: Сироп из земляники - липкая жидкость,\n схожая с вареньем, но более жидкая и менее сладкая.\n \n Получение: положить в горячую воду не менее\n 8 порций земляники, перемешивая их до получения\n однородной массы."
+	elif item_show == "Sugar": 
+		description.text = "Описание: Сахар - съестной продукт,\n в основе которого лежит сахароза.\n \n Получение: растение из которого принято его получать\n не растет даже на живом огороде,\n поэтому Савелий советует брать из его запасов."
+	elif item_show == "Landish_conc":
+		description.text = "Описание - перетертые листья ландыша, богаты фосфором.\n \n Получение: растолочь ландыш"
+	elif item_show == "Landish_Infusion":
+		description.text = "Описание: Отвар из ландыша - средство от боли в сердце.\n Ввиду наличия яда в самом ландыше,\n данный отвар без нужной дозировки станет ядом.\n \n Получение: в заранее нагретой воде размешать\n концентрат ландыша и его золу"

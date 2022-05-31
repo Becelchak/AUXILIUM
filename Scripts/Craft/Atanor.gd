@@ -50,6 +50,12 @@ func set_reaction(button):
 		item_craft = result[0]
 		formul_craft = result[1]
 		concentrate_craft = int(result[2])
+		player.update_main_quest(item_craft)
+		player.check_progress()
+		if item_craft == "Romashka_Infusion":
+			player.Is_tutorial = false
+			var g = get_parent().get_parent().get_parent()
+			g.exit.visible = true
 		$Panel/Stupka/Result.texture = load("res://items/Grasses/Formuls/%s.png" % formul_craft)
 		$Panel/Stupka/Result.visible = true
 		$Panel/Stupka/LabelRect.visible = true
@@ -76,48 +82,158 @@ func update_item_lists():
 	fyer_invent.get_child(1).get_child(0).get_child(0)._ready()
 
 func craft_item(item, count):
-	if count == 1:
-		if item[0].has("Coal"):
-			for i in item.size():
-				var its = item[i][0]
-				var couts = int(item[i][1])
-				player.atanorItems[its][0] -= couts
-			count_items = 0
-			update_item_lists()
-			return "Coal X 1"
-		if item[0].has("GazSulf"):
-			for i in item.size():
-				var its = item[i][0]
-				var couts = int(item[i][1])
-				player.atanorItems[its][0] -= couts
-			count_items = 0
-			update_item_lists()
-			return "WaterSulf Trioxid_sulfur 1"
-		else:
-			count_items = 0
-			for i in item.size():
-				var its = item[i][0]
-				var couts = int(item[i][1])
-				player.atanorItems[its][0] -= couts
-			update_item_lists()
-			return "%s X 1" %item[0][0]
-	elif count == 2:
-		if item[0].has("Sulfur") && item[1].has("Ferum_conc") || item[1].has("Sulfur") && item[0].has("Ferum_conc") :
-			for i in item.size():
-				var its = item[i][0]
-				var couts = int(item[i][1])
-				player.atanorItems[its][0] -= couts
-			count_items = 0
-			update_item_lists()
-			return "SulFer Sulfid_Ferum 1"
-		elif item[0].has("SulfAcid") && item[1].has("Chlorid_Natrium") || item[1].has("SulfAcid") && item[0].has("Chlorid_Natrium") :
-			for i in item.size():
-				var its = item[i][0]
-				var couts = int(item[i][1])
-				player.atanorItems[its][0] -= couts
-			count_items = 0
-			update_item_lists()
-			return "HydroAcid Hydrochloric_acid 1"
+	if item != null:
+		if count == 1:
+			if item[0].has("Coal"):
+				for i in item.size():
+					var its = item[i][0]
+					var couts = int(item[i][1])
+					player.atanorItems[its][0] -= couts
+				count_items = 0
+				update_item_lists()
+				return "Coal X 1"
+			if item[0].has("GazSulf"):
+				for i in item.size():
+					var its = item[i][0]
+					var couts = int(item[i][1])
+					player.atanorItems[its][0] -= couts
+				count_items = 0
+				update_item_lists()
+				return "WaterSulf Trioxid_sulfur 1"
+			else:
+				count_items = 0
+				for i in item.size():
+					var its = item[i][0]
+					var couts = int(item[i][1])
+					player.atanorItems[its][0] -= couts
+				update_item_lists()
+				return "%s X 1" %item[0][0]
+		elif count == 2:
+			if item[0].has("Sulfur") && item[1].has("Ferum_conc") || item[1].has("Sulfur") && item[0].has("Ferum_conc") :
+				for i in item.size():
+					var its = item[i][0]
+					var couts = int(item[i][1])
+					player.atanorItems[its][0] -= couts
+				count_items = 0
+				update_item_lists()
+				return "SulFer Sulfid_Ferum 1"
+			elif item[0].has("SulfAcid") && item[1].has("Chlorid_Natrium") || item[1].has("SulfAcid") && item[0].has("Chlorid_Natrium") :
+				for i in item.size():
+					var its = item[i][0]
+					var couts = int(item[i][1])
+					player.atanorItems[its][0] -= couts
+				count_items = 0
+				update_item_lists()
+				return "HydroAcid Hydrochloric_acid 1"
+			else:
+				count_items = 0
+				for i in item.size():
+					var its = item[i][0]
+					var couts = int(item[i][1])
+					player.atanorItems[its][0] -= couts
+				update_item_lists()
+				return "Bruh X 1"
+		elif count == 3:
+			if item[0].has("Water") && item[1].has("WaterSulf") || item[1].has("Water") && item[0].has("WaterSulf"):
+				for i in item.size():
+					var its = item[i][0]
+					var couts = int(item[i][1])
+					player.atanorItems[its][0] -= couts
+				count_items = 0
+				update_item_lists()
+				return "SulfAcid Sulphuric_acid 1"
+			else:
+				count_items = 0
+				for i in item.size():
+					var its = item[i][0]
+					var couts = int(item[i][1])
+					player.atanorItems[its][0] -= couts
+				update_item_lists()
+				return "Bruh X 1"
+		elif count == 4:
+			if item[0].has("Water") && item[1].has("Nezabudka_conc") && item[1].has("x2") || item[1].has("Water") && item[0].has("Nezabudka_conc") && item[0].has("x2"):
+				for i in item.size():
+					var its = item[i][0]
+					var couts = int(item[i][1])
+					player.atanorItems[its][0] -= couts
+				count_items = 0
+				update_item_lists()
+				return "Nezabudka_Infusion Flavon 1"
+			elif item[0].has("Water") && item[1].has("Landish_conc") && item[2].has("Landish_ashes") || item[0].has("Water") && item[2].has("Landish_conc") && item[1].has("Landish_ashes"):
+				for i in item.size():
+					var its = item[i][0]
+					var couts = int(item[i][1])
+					player.atanorItems[its][0] -= couts
+				count_items = 0
+				update_item_lists()
+				return "Landish_Infusion Glikozid 1"
+			else:
+				count_items = 0
+				for i in item.size():
+					var its = item[i][0]
+					var couts = int(item[i][1])
+					player.atanorItems[its][0] -= couts
+				update_item_lists()
+				return "Bruh X 1"
+		elif count == 5:
+			if item[0].has("Water") && item[2].has("Wood_conc") && item[1].has("SulfNatri") || item[0].has("Water") && item[1].has("Wood_conc") && item[2].has("SulfNatri"):
+				for i in item.size():
+					var its = item[i][0]
+					var couts = int(item[i][1])
+					player.atanorItems[its][0] -= couts
+				count_items = 0
+				update_item_lists()
+				return "Celuloza Celuloza 1"
+			elif item[0].has("Water") && item[1].has("Zemlianika_sirop") && item[2].has("Limon_acid") && item[3].has("Sugar"):
+				for i in item.size():
+					var its = item[i][0]
+					var couts = int(item[i][1])
+					player.atanorItems[its][0] -= couts
+				count_items = 0
+				update_item_lists()
+				return "Juice X 1"
+			else:
+				count_items = 0
+				for i in item.size():
+					var its = item[i][0]
+					var couts = int(item[i][1])
+					player.atanorItems[its][0] -= couts
+				update_item_lists()
+				return "Bruh X 1"
+		elif count == 7:
+			if item[0].has("Water") && item[1].has("Romashka_conc") && item[0].has("x4") && item[1].has("x3") || item[1].has("Water") && item[0].has("Romashka_conc") && item[1].has("x4") && item[0].has("x3"):
+				for i in item.size():
+					var its = item[i][0]
+					var couts = int(item[i][1])
+					player.atanorItems[its][0] -= couts
+				count_items = 0
+				update_item_lists()
+				return "Romashka_Infusion Hamazulen 1"
+			else:
+				count_items = 0
+				for i in item.size():
+					var its = item[i][0]
+					var couts = int(item[i][1])
+					player.atanorItems[its][0] -= couts
+				update_item_lists()
+				return "Bruh X 1"
+		elif count == 10:
+			if item[0].has("Water") && item[1].has("Zemlianika") && item[0].has("x2") && item[1].has("x8") || item[1].has("Water") && item[0].has("Zemlianika") && item[1].has("x2") && item[0].has("x8"):
+				for i in item.size():
+					var its = item[i][0]
+					var couts = int(item[i][1])
+					player.atanorItems[its][0] -= couts
+				count_items = 0
+				update_item_lists()
+				return "Zemlianika_sirop X 1"
+			else:
+				count_items = 0
+				for i in item.size():
+					var its = item[i][0]
+					var couts = int(item[i][1])
+					player.atanorItems[its][0] -= couts
+				update_item_lists()
+				return "Bruh X 1"
 		else:
 			count_items = 0
 			for i in item.size():
@@ -126,107 +242,6 @@ func craft_item(item, count):
 				player.atanorItems[its][0] -= couts
 			update_item_lists()
 			return "Bruh X 1"
-	elif count == 3:
-		if item[0].has("Water") && item[1].has("WaterSulf") || item[1].has("Water") && item[0].has("WaterSulf"):
-			for i in item.size():
-				var its = item[i][0]
-				var couts = int(item[i][1])
-				player.atanorItems[its][0] -= couts
-			count_items = 0
-			update_item_lists()
-			return "SulfAcid Sulphuric_acid 1"
-		else:
-			count_items = 0
-			for i in item.size():
-				var its = item[i][0]
-				var couts = int(item[i][1])
-				player.atanorItems[its][0] -= couts
-			update_item_lists()
-			return "Bruh X 1"
-	elif count == 4:
-		if item[0].has("Water") && item[1].has("Nezabudka_conc") && item[1].has("x2") || item[1].has("Water") && item[0].has("Nezabudka_conc") && item[0].has("x2"):
-			for i in item.size():
-				var its = item[i][0]
-				var couts = int(item[i][1])
-				player.atanorItems[its][0] -= couts
-			count_items = 0
-			update_item_lists()
-			return "Nezabudka_Infusion Flavon 1"
-		else:
-			count_items = 0
-			for i in item.size():
-				var its = item[i][0]
-				var couts = int(item[i][1])
-				player.atanorItems[its][0] -= couts
-			update_item_lists()
-			return "Bruh X 1"
-	elif count == 5:
-		if item[0].has("Water") && item[2].has("Wood_conc") && item[1].has("SulfNatri") || item[0].has("Water") && item[1].has("Wood_conc") && item[2].has("SulfNatri"):
-			for i in item.size():
-				var its = item[i][0]
-				var couts = int(item[i][1])
-				player.atanorItems[its][0] -= couts
-			count_items = 0
-			update_item_lists()
-			return "Celuloza Celuloza 1"
-		elif item[0].has("Water") && item[1].has("Zemlianika_sirop") && item[2].has("Limon_acid") && item[3].has("Sugar"):
-			for i in item.size():
-				var its = item[i][0]
-				var couts = int(item[i][1])
-				player.atanorItems[its][0] -= couts
-			count_items = 0
-			update_item_lists()
-			return "Celuloza Celuloza 1"
-		else:
-			count_items = 0
-			for i in item.size():
-				var its = item[i][0]
-				var couts = int(item[i][1])
-				player.atanorItems[its][0] -= couts
-			update_item_lists()
-			return "Bruh X 1"
-	elif count == 7:
-		if item[0].has("Water") && item[1].has("Romashka_conc") && item[0].has("x4") && item[1].has("x3") || item[1].has("Water") && item[0].has("Romashka_conc") && item[1].has("x4") && item[0].has("x3"):
-			for i in item.size():
-				var its = item[i][0]
-				var couts = int(item[i][1])
-				player.atanorItems[its][0] -= couts
-			count_items = 0
-			update_item_lists()
-			return "Romashka_Infusion Hamazulen 1"
-		else:
-			count_items = 0
-			for i in item.size():
-				var its = item[i][0]
-				var couts = int(item[i][1])
-				player.atanorItems[its][0] -= couts
-			update_item_lists()
-			return "Bruh X 1"
-	elif count == 10:
-		if item[0].has("Water") && item[1].has("Zemlianika") && item[0].has("x2") && item[1].has("x8") || item[1].has("Water") && item[0].has("Zemlianika") && item[1].has("x2") && item[0].has("x8"):
-			for i in item.size():
-				var its = item[i][0]
-				var couts = int(item[i][1])
-				player.atanorItems[its][0] -= couts
-			count_items = 0
-			update_item_lists()
-			return "Zemlianika_sirop X 1"
-		else:
-			count_items = 0
-			for i in item.size():
-				var its = item[i][0]
-				var couts = int(item[i][1])
-				player.atanorItems[its][0] -= couts
-			update_item_lists()
-			return "Bruh X 1"
-	else:
-		count_items = 0
-		for i in item.size():
-			var its = item[i][0]
-			var couts = int(item[i][1])
-			player.atanorItems[its][0] -= couts
-		update_item_lists()
-		return "Bruh X 1"
 
 func add_water():
 	for i in items.get_item_count():
@@ -242,4 +257,3 @@ func add_water():
 	if items.get_item_count() == 0:
 		items.add_item("Water x2")
 		player.atanorItems["Water"] = [2,80]
-			

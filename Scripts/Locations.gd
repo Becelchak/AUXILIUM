@@ -3,6 +3,7 @@ extends Control
 onready var loc = $Panel/ItemList
 onready var start = $Buttons/Start
 onready var retur = $Buttons/Return
+onready var player = get_node("/root/PlayerData")
 var next_location = ""
 
 func _ready():
