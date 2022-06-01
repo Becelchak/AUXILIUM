@@ -1,0 +1,79 @@
+{
+	"events": [
+		{
+			"background": "res://locations/Laboratoria.jpg",
+			"event_id": "dialogic_021"
+		},
+		{
+			"event_id": "dialogic_024",
+			"set_theme": "default-theme.cfg"
+		},
+		{
+			"character": "character-1650209144.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "У вас получился желтоватый отвар, который сильно пах ромашками.\nВы стали морщиться от такого запаха, отчего у вас мелькнула мысль.\n\"Я сделал правильно или нет?\""
+		},
+		{
+			"event_id": "dialogic_024",
+			"set_theme": "theme-1650186455.cfg"
+		},
+		{
+			"animation": "1-fade_in.gd",
+			"animation_length": 1,
+			"change_mirror_portrait": false,
+			"change_z_index": false,
+			"character": "character-1650178976.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"portrait": "Default",
+			"portrait_definition": "",
+			"position": {
+				"0": false,
+				"1": false,
+				"2": false,
+				"3": false,
+				"4": true
+			},
+			"type": 0,
+			"z_index": 0
+		},
+		{
+			"character": "character-1650178976.json",
+			"event_id": "dialogic_001",
+			"portrait": "Савелий-заглушка радость",
+			"text": "О как бурчит! Варево что надо!"
+		},
+		{
+			"character": "character-1650187446.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Пахнет не очень...Да и ступкой непривычно работать"
+		},
+		{
+			"character": "character-1650178976.json",
+			"event_id": "dialogic_001",
+			"portrait": "Савелий-заглушка удивление",
+			"text": "Ишь! Сказал же, варево что надо, говорю же!\nТы лучше давай бери баночку и сито. Просаживать будем твой отвар."
+		},
+		{
+			"event_id": "dialogic_024",
+			"set_theme": "default-theme.cfg"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Вы сделали свое первый отвар!"
+		},
+		{
+			"change_timeline": "timeline-1650715827.json",
+			"event_id": "dialogic_020"
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.4.1",
+		"file": "timeline-1653977604.json",
+		"name": "Chapter_I-2"
+	}
+}

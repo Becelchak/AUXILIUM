@@ -9,7 +9,7 @@
 	"nickname": "Савелий",
 	"nickname_bool": true,
 	"offset_x": 0,
-	"offset_y": 0,
+	"offset_y": 25,
 	"portraits": [
 		{
 			"name": "Default",

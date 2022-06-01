@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Глава 2 (Лес).mp3-06a408b92ed962398056e63e2fc5897a.mp3str"
+
+[deps]
+
+source_file="res://music/Глава 2 (Лес).mp3"
+dest_files=[ "res://.import/Глава 2 (Лес).mp3-06a408b92ed962398056e63e2fc5897a.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

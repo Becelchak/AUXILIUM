@@ -1,0 +1,151 @@
+[gd_scene load_steps=13 format=2]
+
+[ext_resource path="res://Scenes/Buttons/SceneButton.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Scripts/Menu.gd" type="Script" id=2]
+[ext_resource path="res://addons/dialogic/Example Assets/Fonts/DefaultFont.tres" type="DynamicFont" id=3]
+[ext_resource path="res://items/UI/Popup.png" type="Texture" id=4]
+[ext_resource path="res://Menu-background.png" type="Texture" id=5]
+[ext_resource path="res://Scripts/Setting.gd" type="Script" id=6]
+[ext_resource path="res://addons/dialogic/Example Assets/Fonts/NameFont.tres" type="DynamicFont" id=7]
+[ext_resource path="res://addons/dialogic/Example Assets/Fonts/DefaultBoldFont.tres" type="DynamicFont" id=8]
+[ext_resource path="res://addons/dialogic/Editor/Theme/MainTheme.tres" type="Theme" id=9]
+
+[sub_resource type="CanvasItemMaterial" id=2]
+
+[sub_resource type="Theme" id=1]
+default_font = ExtResource( 3 )
+
+[sub_resource type="Theme" id=3]
+default_font = ExtResource( 7 )
+
+[node name="Menu" type="Control"]
+use_parent_material = true
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 2 )
+
+[node name="Background" type="Sprite" parent="."]
+position = Vector2( 951, 511 )
+scale = Vector2( 1.47118, 1.47118 )
+texture = ExtResource( 5 )
+
+[node name="Buttons" type="VBoxContainer" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -531.0
+margin_top = -336.0
+margin_right = 493.0
+margin_bottom = 264.0
+theme = ExtResource( 9 )
+alignment = 1
+
+[node name="Start" parent="Buttons" instance=ExtResource( 1 )]
+material = SubResource( 2 )
+use_parent_material = true
+margin_left = 387.0
+margin_top = 71.0
+margin_right = 637.0
+margin_bottom = 221.0
+rect_min_size = Vector2( 250, 150 )
+rect_pivot_offset = Vector2( 1, 1 )
+theme = SubResource( 1 )
+custom_colors/font_color_disabled = Color( 0.235294, 0.509804, 0.309804, 1 )
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+custom_constants/hseparation = -1
+custom_fonts/font = ExtResource( 3 )
+text = "Начать игру"
+
+[node name="Setting" parent="Buttons" instance=ExtResource( 1 )]
+material = SubResource( 2 )
+use_parent_material = true
+margin_left = 387.0
+margin_top = 225.0
+margin_right = 637.0
+margin_bottom = 375.0
+rect_min_size = Vector2( 250, 150 )
+theme = SubResource( 1 )
+custom_colors/font_color_disabled = Color( 0.235294, 0.509804, 0.309804, 1 )
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+custom_constants/hseparation = -1
+text = "Управление"
+
+[node name="End" parent="Buttons" instance=ExtResource( 1 )]
+material = SubResource( 2 )
+use_parent_material = true
+margin_left = 387.0
+margin_top = 379.0
+margin_right = 637.0
+margin_bottom = 529.0
+rect_min_size = Vector2( 250, 150 )
+theme = SubResource( 1 )
+custom_colors/font_color_disabled = Color( 0.235294, 0.509804, 0.309804, 1 )
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+custom_constants/hseparation = -1
+text = "Выйти из игры"
+
+[node name="Setting" type="Control" parent="."]
+visible = false
+light_mask = 3
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 6 )
+
+[node name="TextureRect" type="TextureRect" parent="Setting"]
+margin_left = 465.0
+margin_top = 148.0
+margin_right = 1485.0
+margin_bottom = 963.0
+texture = ExtResource( 4 )
+expand = true
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Setting"]
+margin_left = 475.0
+margin_top = 170.0
+margin_right = 1465.0
+margin_bottom = 945.0
+rect_min_size = Vector2( 700, 80 )
+theme = SubResource( 3 )
+custom_constants/separation = 50
+
+[node name="Title" type="Label" parent="Setting/VBoxContainer"]
+margin_right = 750.0
+margin_bottom = 80.0
+rect_min_size = Vector2( 750, 80 )
+size_flags_horizontal = 0
+custom_colors/font_color = Color( 0.901961, 1, 0.439216, 1 )
+custom_colors/font_color_shadow = Color( 0.20118, 0.265625, 0.187805, 1 )
+text = "
+Управление"
+align = 1
+valign = 2
+uppercase = true
+
+[node name="Inventory" type="Label" parent="Setting/VBoxContainer"]
+margin_top = 130.0
+margin_right = 750.0
+margin_bottom = 210.0
+rect_min_size = Vector2( 750, 80 )
+size_flags_horizontal = 0
+text = "Кнопка \"I\" - открыть инвентарь"
+valign = 1
+
+[node name="Dialog" type="Label" parent="Setting/VBoxContainer"]
+margin_top = 260.0
+margin_right = 750.0
+margin_bottom = 340.0
+rect_min_size = Vector2( 750, 80 )
+size_flags_horizontal = 0
+text = "Правая кнопка мыши - следующая реплика персонажа"
+valign = 1
+
+[node name="Return" type="Button" parent="Setting"]
+margin_left = 1300.0
+margin_top = 868.0
+margin_right = 1420.0
+margin_bottom = 928.0
+custom_colors/font_color = Color( 0.901961, 1, 0.439216, 1 )
+custom_fonts/font = ExtResource( 8 )
+text = "Return"
+flat = true

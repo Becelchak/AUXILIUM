@@ -1,0 +1,132 @@
+{
+	"events": [
+		{
+			"audio_bus": "Master",
+			"background-music": "play",
+			"event_id": "dialogic_031",
+			"event_name": "BackgroundMusic",
+			"fade_length": 0.9,
+			"file": "res://music/Пролог (Прибытие).mp3",
+			"volume": -6
+		},
+		{
+			"audio": "play",
+			"audio_bus": "Master",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "res://dialogic/sounds/Открытие двери.mp3",
+			"volume": 0
+		},
+		{
+			"background": "res://locations/Laboratoria.jpg",
+			"event_id": "dialogic_021"
+		},
+		{
+			"event_id": "dialogic_024",
+			"set_theme": "default-theme.cfg"
+		},
+		{
+			"character": "character-1650209144.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Собрав немногочисленные травы в огороде, вы вернулись в избу, неся в руках честно нажитое\nСавелий тем временем уже кинул какие-то деревяшки в атанор и достал ступку"
+		},
+		{
+			"event_id": "dialogic_024",
+			"set_theme": "theme-1650186455.cfg"
+		},
+		{
+			"animation": "1-fade_in.gd",
+			"animation_length": 0,
+			"change_mirror_portrait": false,
+			"change_z_index": false,
+			"character": "character-1650178976.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"portrait": "Default",
+			"portrait_definition": "",
+			"position": {
+				"0": false,
+				"1": false,
+				"2": false,
+				"3": false,
+				"4": true
+			},
+			"type": 0,
+			"z_index": 0
+		},
+		{
+			"character": "character-1650178976.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Ну, вот тебе все необходимое для начала.\nПерво-наперво тебе нужно  налить водицы в колбу на атаноре. Водица если что в корыте под столом. Два черпака будет в самый раз.\nЗатем тебе надо перемолоть все эти ромашки. Их лепестки и сердцевинки.\nПотом в воду их спускаешь. Как постоит немного, перемешай, да хорошенько!"
+		},
+		{
+			"character": "character-1650187446.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "А-а..вы куда, дядь Савелий?"
+		},
+		{
+			"character": "character-1650178976.json",
+			"event_id": "dialogic_001",
+			"portrait": "Савелий-заглушка удивление",
+			"text": "Я то? Я за баночкой чистой в подвал! Ну, с Богом!"
+		},
+		{
+			"animation": "4-fade_out.gd",
+			"animation_length": 1,
+			"change_mirror_portrait": false,
+			"change_z_index": false,
+			"character": "character-1650178976.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"portrait": "",
+			"portrait_definition": "",
+			"position": {
+				"0": false,
+				"1": false,
+				"2": false,
+				"3": false,
+				"4": false
+			},
+			"type": 1,
+			"z_index": 0
+		},
+		{
+			"event_id": "dialogic_024",
+			"set_theme": "default-theme.cfg"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "Начать варку?"
+		},
+		{
+			"choice": "Сесть за стол",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1650209144.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Вы приступили к варке зелья."
+		},
+		{
+			"change_scene": "res://Scenes/Craft.tscn",
+			"event_id": "dialogic_041"
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.4.1",
+		"file": "timeline-1650715019.json",
+		"name": "Chapter_I"
+	}
+}

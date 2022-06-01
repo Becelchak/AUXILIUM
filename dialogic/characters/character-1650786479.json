@@ -1,0 +1,25 @@
+{
+	"color": "#ff69284e",
+	"description": "",
+	"display_name": "Домовой Щкит",
+	"display_name_bool": true,
+	"id": "character-1650786479.json",
+	"mirror_portraits": false,
+	"name": "Щкит",
+	"nickname": "",
+	"nickname_bool": false,
+	"offset_x": 0,
+	"offset_y": -95,
+	"portraits": [
+		{
+			"name": "Default",
+			"path": "res://characters/Шкит-заглушка.png"
+		},
+		{
+			"name": "Щкит-заглушка злой",
+			"path": "res://characters/Шкит-заглушка злой.png"
+		}
+	],
+	"scale": 100,
+	"theme": ""
+}

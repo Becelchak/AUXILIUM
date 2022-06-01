@@ -6,8 +6,8 @@
 			"event_id": "dialogic_031",
 			"event_name": "BackgroundMusic",
 			"fade_length": 0.9,
-			"file": "res://music/Пролог.mp3",
-			"volume": -5
+			"file": "res://music/Пролог (Прибытие).mp3",
+			"volume": -9
 		},
 		{
 			"background": "res://locations/Prolog.png",

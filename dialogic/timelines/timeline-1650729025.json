@@ -1,0 +1,381 @@
+{
+	"events": [
+		{
+			"audio_bus": "Master",
+			"background-music": "play",
+			"event_id": "dialogic_031",
+			"event_name": "BackgroundMusic",
+			"fade_length": 1,
+			"file": "res://music/Глава 2 (Лес).mp3",
+			"volume": -8
+		},
+		{
+			"background": "res://locations/Forest.png",
+			"event_id": "dialogic_021"
+		},
+		{
+			"event_id": "dialogic_024",
+			"set_theme": "default-theme.cfg"
+		},
+		{
+			"character": "character-1650209144.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Вы входите в огромный сосновый лес.\nВас пробирает некий холодок от вида деревянных гигантов\nВы чуете отдаленно знакомый запах леса: травы, сырости и свежего воздуха\nПройдя пару шагов вы чуете незнакомый до селе запах\nПомесь глины, трав, гнили и чего-то еще ощущался четко и ясно.\nОщущался так, словно его источник прямо за вами..."
+		},
+		{
+			"event_id": "dialogic_024",
+			"set_theme": "theme-1650186455.cfg"
+		},
+		{
+			"animation": "instant_in.gd",
+			"animation_length": 1.5,
+			"change_mirror_portrait": false,
+			"change_z_index": false,
+			"character": "character-1650731302.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"portrait": "Default",
+			"portrait_definition": "",
+			"position": {
+				"0": false,
+				"1": false,
+				"2": true,
+				"3": false,
+				"4": false
+			},
+			"type": 0,
+			"z_index": 0
+		},
+		{
+			"character": "character-1650187446.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "А-а-а!"
+		},
+		{
+			"character": "character-1650731302.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Тише, чего орешь?"
+		},
+		{
+			"character": "character-1650731302.json",
+			"event_id": "dialogic_001",
+			"portrait": "Квазир-заглушка указывает",
+			"text": "Вон всех птиц испугал."
+		},
+		{
+			"animation": "shake_x.gd",
+			"animation_length": 1,
+			"change_mirror_portrait": false,
+			"change_position": false,
+			"change_z_index": false,
+			"character": "character-1650731302.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"portrait": "(Don't change)",
+			"portrait_definition": "",
+			"position": {
+				"0": false,
+				"1": false,
+				"2": false,
+				"3": false,
+				"4": false
+			},
+			"type": 2,
+			"z_index": 0
+		},
+		{
+			"animation": "[Default]",
+			"animation_length": 0,
+			"change_mirror_portrait": false,
+			"change_position": false,
+			"change_z_index": false,
+			"character": "character-1650731302.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"portrait": "Default",
+			"portrait_definition": "",
+			"position": {
+				"0": false,
+				"1": false,
+				"2": false,
+				"3": false,
+				"4": false
+			},
+			"type": 2,
+			"z_index": 0
+		},
+		{
+			"character": "character-1650187446.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "А?"
+		},
+		{
+			"event_id": "dialogic_024",
+			"set_theme": "default-theme.cfg"
+		},
+		{
+			"character": "character-1650209144.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Вас окутывает недоумение. Вы в замешательстве.\nНеизвестный смотрит на вас своими ненормально большими глазами\nИ больше ничего. Подобное заставляет вас даже засмущаться."
+		},
+		{
+			"event_id": "dialogic_024",
+			"set_theme": "theme-1650186455.cfg"
+		},
+		{
+			"character": "character-1650187446.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Т...т-ты кто?"
+		},
+		{
+			"animation": "[Default]",
+			"animation_length": 0,
+			"change_mirror_portrait": false,
+			"change_position": false,
+			"change_z_index": false,
+			"character": "character-1650730171.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"portrait": "Default",
+			"portrait_definition": "",
+			"position": {
+				"0": false,
+				"1": false,
+				"2": false,
+				"3": false,
+				"4": false
+			},
+			"type": 2,
+			"z_index": 0
+		},
+		{
+			"character": "character-1650730171.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Квазир"
+		},
+		{
+			"character": "character-1650187446.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Какой еще Квасир?"
+		},
+		{
+			"character": "character-1650730171.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Квазир я. Леший."
+		},
+		{
+			"event_id": "dialogic_024",
+			"set_theme": "default-theme.cfg"
+		},
+		{
+			"character": "character-1650209144.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Вы все еще пребываете в растерянности.\nЛеший все так же смотрит на вас, словно статуя\nТолько сейчас вы замечаете, что он похож на огромного гриба, растущего в пне"
+		},
+		{
+			"event_id": "dialogic_024",
+			"set_theme": "theme-1650186455.cfg"
+		},
+		{
+			"character": "character-1650187446.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Зачем людей пугаешь, Квазир?"
+		},
+		{
+			"character": "character-1650730171.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Я не пугал. Ты сам закричал. Я сам испугался."
+		},
+		{
+			"event_id": "dialogic_024",
+			"set_theme": "default-theme.cfg"
+		},
+		{
+			"character": "character-1650209144.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Вы несколько растеряны и сбиты с толку.\nКогда последние крупицы страха растворились, вы осмотрели нового знакомого с ног до головы.\nЕсли таковое вообще возможно сделать по отношению к пню с ручками."
+		},
+		{
+			"event_id": "dialogic_024",
+			"set_theme": "theme-1650186455.cfg"
+		},
+		{
+			"character": "character-1650187446.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "А чего тогда подкрался ко мне? Мог бы и предупредить"
+		},
+		{
+			"character": "character-1650730171.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Я спал тут. Ты пришел - разбудил."
+		},
+		{
+			"character": "character-1650187446.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "А...прости. Я шел за травами и не заметил тебя."
+		},
+		{
+			"character": "character-1650730171.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Ничего. Хорошо что ты не пошел дальше. Там волк рыщет."
+		},
+		{
+			"character": "character-1650187446.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Кто рыщет?!"
+		},
+		{
+			"character": "character-1650730171.json",
+			"event_id": "dialogic_001",
+			"portrait": "Квазир-заглушка указывает",
+			"text": "Волк. Прям вон тама"
+		},
+		{
+			"event_id": "dialogic_024",
+			"set_theme": "default-theme.cfg"
+		},
+		{
+			"character": "character-1650209144.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Квазир без доли сомнения показывал куда-то чуть правее тропинки по которой вы шли ранее\nПосле этого вы почуяли, как ноги начали дрожать"
+		},
+		{
+			"event_id": "dialogic_024",
+			"set_theme": "theme-1650186455.cfg"
+		},
+		{
+			"character": "character-1650730171.json",
+			"event_id": "dialogic_001",
+			"portrait": "Default",
+			"text": "Он далеко, но крик слышал. Тебе лучше идти налево.\nТам волк не найдет тебя и земляника вкусная растет"
+		},
+		{
+			"character": "character-1650187446.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Аэ-э..правда? Там?"
+		},
+		{
+			"character": "character-1650730171.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Правда. Сам сегодня ел."
+		},
+		{
+			"event_id": "dialogic_024",
+			"set_theme": "default-theme.cfg"
+		},
+		{
+			"character": "character-1650209144.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Квазир видимо не понял ваших опасений по поводу волка.\nОн лишь продолжил столь же добродушно смотреть на вас своими большими глазами.\nВидя такую искренность, вам даже стало немного легче."
+		},
+		{
+			"event_id": "dialogic_024",
+			"set_theme": "theme-1650186455.cfg"
+		},
+		{
+			"character": "character-1650187446.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "А-а...спасибо, Квазир. Как бы тебя отблагодарить?"
+		},
+		{
+			"character": "character-1650730171.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "У тебя есть компот?"
+		},
+		{
+			"character": "character-1650187446.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Ам-м нету"
+		},
+		{
+			"character": "character-1650730171.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Значит никак."
+		},
+		{
+			"animation": "[Default]",
+			"animation_length": 0,
+			"change_mirror_portrait": false,
+			"change_z_index": false,
+			"character": "character-1650731302.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"portrait": "",
+			"portrait_definition": "",
+			"position": {
+				"0": false,
+				"1": false,
+				"2": false,
+				"3": false,
+				"4": false
+			},
+			"type": 1,
+			"z_index": 0
+		},
+		{
+			"animation": "back_out_left.gd",
+			"animation_length": 0,
+			"change_mirror_portrait": false,
+			"change_z_index": false,
+			"character": "character-1650730171.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"portrait": "",
+			"portrait_definition": "",
+			"position": {
+				"0": false,
+				"1": false,
+				"2": false,
+				"3": false,
+				"4": false
+			},
+			"type": 1,
+			"z_index": 0
+		},
+		{
+			"event_id": "dialogic_024",
+			"set_theme": "default-theme.cfg"
+		},
+		{
+			"character": "character-1650209144.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Вы продолжаете свой путь дальше"
+		},
+		{
+			"change_scene": "res://Scenes/ForestStory.tscn",
+			"event_id": "dialogic_041"
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.4.1",
+		"file": "timeline-1650729025.json",
+		"name": "Chapter_II"
+	}
+}

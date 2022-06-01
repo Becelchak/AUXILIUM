@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Скрип половицы.mp3-6389720140af55337692cc8ff52c0813.mp3str"
+
+[deps]
+
+source_file="res://dialogic/sounds/Скрип половицы.mp3"
+dest_files=[ "res://.import/Скрип половицы.mp3-6389720140af55337692cc8ff52c0813.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

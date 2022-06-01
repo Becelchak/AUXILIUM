@@ -1,0 +1,192 @@
+{
+	"events": [
+		{
+			"audio": "play",
+			"audio_bus": "Master",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "res://dialogic/sounds/Скрип половицы.mp3",
+			"volume": 0
+		},
+		{
+			"background": "res://locations/Underfloor.jpg",
+			"event_id": "dialogic_021"
+		},
+		{
+			"event_id": "dialogic_024",
+			"set_theme": "default-theme.cfg"
+		},
+		{
+			"character": "character-1650209144.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Зайдя в подвал, вы поставили банку с компотом на видное место."
+		},
+		{
+			"audio": "play",
+			"audio_bus": "Master",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "",
+			"volume": 0
+		},
+		{
+			"character": "character-1650209144.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Спустя время, послышался какой-то шорох, но Щкита не было видно.\nВдруг, послышался скрип половицы. Вы сразу же отвлеклись от банки, смотря на лестницу."
+		},
+		{
+			"event_id": "dialogic_024",
+			"set_theme": "theme-1650186455.cfg"
+		},
+		{
+			"animation": "[Default]",
+			"animation_length": 0,
+			"change_mirror_portrait": false,
+			"change_z_index": false,
+			"character": "character-1650178976.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"portrait": "Default",
+			"portrait_definition": "",
+			"position": {
+				"0": false,
+				"1": true,
+				"2": false,
+				"3": false,
+				"4": false
+			},
+			"type": 0,
+			"z_index": 0
+		},
+		{
+			"character": "character-1650178976.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Ну что, внучек, отнес компот?"
+		},
+		{
+			"character": "character-1650187446.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Отнес - отнес. Да только не берет его Щкит.\nВидать не нравится ему такой компот."
+		},
+		{
+			"character": "character-1650178976.json",
+			"event_id": "dialogic_001",
+			"portrait": "Савелий-заглушка удивление",
+			"text": "Не берет говоришь? А где тогда банка? "
+		},
+		{
+			"character": "character-1650187446.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Да как где - во...а где она?"
+		},
+		{
+			"event_id": "dialogic_024",
+			"set_theme": "default-theme.cfg"
+		},
+		{
+			"character": "character-1650209144.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Посмотрев на столик, где стояла банка, вы не обнаружили ее там.\nОзираясь по сторонам, вы наконец услышали какое-то бульканье."
+		},
+		{
+			"event_id": "dialogic_024",
+			"set_theme": "theme-1650186455.cfg"
+		},
+		{
+			"animation": "headshake.gd",
+			"animation_length": 3,
+			"change_mirror_portrait": false,
+			"change_position": false,
+			"change_z_index": false,
+			"character": "character-1650178976.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"portrait": "Савелий-заглушка радость",
+			"portrait_definition": "",
+			"position": {
+				"0": false,
+				"1": true,
+				"2": false,
+				"3": false,
+				"4": false
+			},
+			"type": 2,
+			"z_index": 0
+		},
+		{
+			"character": "character-1650178976.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "О-о-о, слышишь? Это Щкит булькает.\nЗначит ему понравился компот."
+		},
+		{
+			"character": "character-1650187446.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Вот как. Значит, не будет склянки бить больше?"
+		},
+		{
+			"character": "character-1650178976.json",
+			"event_id": "dialogic_001",
+			"portrait": "Default",
+			"text": "Не будет."
+		},
+		{
+			"character": "character-1650187446.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "И значит я прошел испытание?"
+		},
+		{
+			"character": "character-1650178976.json",
+			"event_id": "dialogic_001",
+			"portrait": "Савелий-заглушка радость",
+			"text": "Прошел.\nПоздравляю, внучек. Теперь ты новый лекарь."
+		},
+		{
+			"character": "character-1650178976.json",
+			"event_id": "dialogic_001",
+			"portrait": "Default",
+			"text": "Правда пока я жив, ты будешь моим помощником.\nAuxilium, как говорится на одном старинном языке."
+		},
+		{
+			"character": "character-1650187446.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "И что мне дальше делать?"
+		},
+		{
+			"character": "character-1650178976.json",
+			"event_id": "dialogic_001",
+			"portrait": "Савелий-заглушка удивление",
+			"text": "Как что? Делать заготовки на зиму.\nЗимой травы не пособираешь, так что лучше сделать запасы."
+		},
+		{
+			"character": "character-1650178976.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Но это уж завтра давай. А сейчас пошли есть.\nЗа всякую работу полагается награда, вот и за твою тоже."
+		},
+		{
+			"event_id": "dialogic_024",
+			"set_theme": "default-theme.cfg"
+		},
+		{
+			"character": "character-1650209144.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Под затихающее бульканье и скрип половицы, вы с Савелием поднимались наверх.\nВы стали чувствовать себя невероятно довольным собой.\nЗатем ваши думы перешли на новые растворы и отвары, которые вы могли бы сделать.\nВас мучали те неудачные попытки, что вы совершили, а так же многие другие вопросы: \"А что будет если смешать то с этим?\".\nВ конце концов вы решили приберечь их до завтра, до того момента, когда станете полноправным лекарем.\nВернее его помощником.\nКОНЕЦ"
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.4.1",
+		"file": "timeline-1653972878.json",
+		"name": "Final"
+	}
+}

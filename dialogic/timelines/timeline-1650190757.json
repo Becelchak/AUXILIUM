@@ -75,6 +75,19 @@
 			"text": "Савелий берет маленькую лейку из под мантии и начинает поливать грядки\nЧудесным образом из казалось бы мертвой земли показываются растения"
 		},
 		{
+			"audio": "play",
+			"audio_bus": "Master",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "",
+			"volume": 0
+		},
+		{
+			"background": "res://locations/Garden-2.png",
+			"event_id": "dialogic_021",
+			"fade_duration": 0.5
+		},
+		{
 			"event_id": "dialogic_024",
 			"set_theme": "theme-1650186455.cfg"
 		},
@@ -82,19 +95,19 @@
 			"character": "character-1650178976.json",
 			"event_id": "dialogic_001",
 			"portrait": "Default",
-			"text": "Вот тебе и не растет!\nОгород то мой ЖИВОЙ\nРасти будет всегда, поливай только\nПравда что конкретно вырастит - один черт знает"
+			"text": "Вот тебе и не растет!\nОгород то мой ЖИВОЙ\nРасти будет всегда, поливай только\nНо что конкретно вырастит - один черт знает, огород всякое может.\nПравда после одного случая, он мне на злость только Ромашки и выращивает..."
 		},
 		{
 			"character": "character-1650187446.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "Ого, а ведь и правду растет.\nА что это за цветы такие выросли?"
+			"text": "Ого, а ведь и правду растет."
 		},
 		{
 			"character": "character-1650178976.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "Самые что ни на есть полезные внучек!\nПовезло нам что не сорняки вымахали\nСобирай скорей  и пойдем обратно."
+			"text": "Ну, да и Бог с ним.\nСобирай скорей  и пойдем обратно."
 		},
 		{
 			"event_id": "dialogic_024",
@@ -117,10 +130,8 @@
 			"value": ""
 		},
 		{
-			"condition": "",
-			"definition": "",
-			"event_id": "dialogic_012",
-			"value": "Да"
+			"change_scene": "res://Scenes/Garden-looting.tscn",
+			"event_id": "dialogic_041"
 		},
 		{
 			"event_id": "dialogic_013"
@@ -129,6 +140,6 @@
 	"metadata": {
 		"dialogic-version": "1.4.1",
 		"file": "timeline-1650190757.json",
-		"name": "Dialog1-2"
+		"name": "Dialog0-2"
 	}
 }

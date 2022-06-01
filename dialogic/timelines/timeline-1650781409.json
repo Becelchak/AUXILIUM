@@ -1,0 +1,477 @@
+{
+	"events": [
+		{
+			"audio_bus": "Master",
+			"background-music": "play",
+			"event_id": "dialogic_031",
+			"event_name": "BackgroundMusic",
+			"fade_length": 1,
+			"file": "res://music/Глава 3 (Подвал).mp3",
+			"volume": -4
+		},
+		{
+			"audio": "play",
+			"audio_bus": "Master",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "res://dialogic/sounds/Скрип половицы.mp3",
+			"volume": 0
+		},
+		{
+			"background": "res://locations/Underfloor.jpg",
+			"event_id": "dialogic_021"
+		},
+		{
+			"event_id": "dialogic_024",
+			"set_theme": "default-theme.cfg"
+		},
+		{
+			"character": "character-1650209144.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Зайдя в подвал, сложить полученный раствор, вы заметили одну странную вещь"
+		},
+		{
+			"audio": "play",
+			"audio_bus": "Master",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "",
+			"volume": 0
+		},
+		{
+			"character": "character-1650209144.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "На некоторых полках не достает склянок с растворами\nВы были уверены, что не брали их, да и Савелий вряд ли взял такие увесистые банки\nВнезапно вы слышите как что-то стучит по склянкам за шкафом"
+		},
+		{
+			"event_id": "dialogic_024",
+			"set_theme": "theme-1650186455.cfg"
+		},
+		{
+			"character": "character-1650187446.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Кто здесь?!"
+		},
+		{
+			"animation": "back_in_right.gd",
+			"animation_length": 1,
+			"change_mirror_portrait": false,
+			"change_z_index": false,
+			"character": "character-1650788818.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"portrait": "Default",
+			"portrait_definition": "",
+			"position": {
+				"0": false,
+				"1": false,
+				"2": false,
+				"3": false,
+				"4": true
+			},
+			"type": 0,
+			"z_index": 0
+		},
+		{
+			"event_id": "dialogic_024",
+			"set_theme": "default-theme.cfg"
+		},
+		{
+			"character": "character-1650209144.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Не успели вы опомниться, как из темноты шкафа вылез маленький пучок волос\nОн посмотрел на вас своими черными, как уголек, глазами и чем-то плюнул "
+		},
+		{
+			"event_id": "dialogic_024",
+			"set_theme": "theme-1650186455.cfg"
+		},
+		{
+			"character": "character-1650788818.json",
+			"event_id": "dialogic_001",
+			"portrait": "Щкит-заглушка злой",
+			"text": "Тьфу!\nОпять кашеварите свою бормотуху!"
+		},
+		{
+			"event_id": "dialogic_024",
+			"set_theme": "default-theme.cfg"
+		},
+		{
+			"character": "character-1650209144.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Комок волос, виденный вами ранее теперь стал лучше различим.\nИм оказался маленький человечек в драной одежке и с растрепанными волосами.\nОн явно злился, глядя на вас глазами размером с бусинки."
+		},
+		{
+			"event_id": "dialogic_024",
+			"set_theme": "theme-1650186455.cfg"
+		},
+		{
+			"character": "character-1650187446.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Ты чего плюешься?"
+		},
+		{
+			"character": "character-1650788818.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "А нечего кашеварить бормотуху свою!"
+		},
+		{
+			"character": "character-1650187446.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Какую еще бормотуху? Я полезный отвар делал!"
+		},
+		{
+			"character": "character-1650788818.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Отраву ты делал!\nМне уже надоели ваши с дедом бормотухи.\nСколько не живу здесь, а уж нос весь завял!\nВаше варево скоро до чертиков доведет!"
+		},
+		{
+			"character": "character-1650187446.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Так это ты взял те склянки?"
+		},
+		{
+			"character": "character-1650788818.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Я!"
+		},
+		{
+			"character": "character-1650187446.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Ах тыж мелкий!"
+		},
+		{
+			"animation": "flash.gd",
+			"animation_length": 5,
+			"animation_repeat": 1,
+			"change_mirror_portrait": false,
+			"change_position": false,
+			"change_z_index": false,
+			"character": "character-1650788818.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"portrait": "Default",
+			"portrait_definition": "",
+			"position": {
+				"0": false,
+				"1": false,
+				"2": false,
+				"3": false,
+				"4": false
+			},
+			"type": 2,
+			"z_index": 0
+		},
+		{
+			"event_id": "dialogic_024",
+			"set_theme": "default-theme.cfg"
+		},
+		{
+			"character": "character-1650209144.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Маленький вредитель принялся резво бегать по подвалу.\nОн был настолько ловок и мал, что вы не смогли даже пальцем его тронуть.\nВскоре, вы выдохлись."
+		},
+		{
+			"event_id": "dialogic_024",
+			"set_theme": "theme-1650186455.cfg"
+		},
+		{
+			"character": "character-1650187446.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Ху-ху...фу-ух..."
+		},
+		{
+			"character": "character-1650788818.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Страшный забияка, прям как дед в молодости."
+		},
+		{
+			"character": "character-1650187446.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Ты...ты и деда доставал?\nКто ты вообще, щкет?"
+		},
+		{
+			"animation": "[Default]",
+			"animation_length": 0,
+			"change_mirror_portrait": false,
+			"change_position": false,
+			"change_z_index": false,
+			"character": "character-1650788818.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"portrait": "(Don't change)",
+			"portrait_definition": "",
+			"position": {
+				"0": false,
+				"1": false,
+				"2": false,
+				"3": false,
+				"4": false
+			},
+			"type": 1,
+			"z_index": 0
+		},
+		{
+			"animation": "[Default]",
+			"animation_length": 0,
+			"change_mirror_portrait": false,
+			"change_z_index": false,
+			"character": "character-1650786479.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"portrait": "Default",
+			"portrait_definition": "",
+			"position": {
+				"0": false,
+				"1": false,
+				"2": false,
+				"3": false,
+				"4": true
+			},
+			"type": 0,
+			"z_index": 0
+		},
+		{
+			"character": "character-1650786479.json",
+			"event_id": "dialogic_001",
+			"portrait": "(Don't change)",
+			"text": "Не щкет я, а Щкит!\nДомовой я!"
+		},
+		{
+			"character": "character-1650187446.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Так чего жильцов изводишь? Наоборот ведь помогать должен..."
+		},
+		{
+			"character": "character-1650786479.json",
+			"event_id": "dialogic_001",
+			"portrait": "Щкит-заглушка злой",
+			"text": "Сдалось мне еще помогать вам, вредителям!\nПортите только дом своей бормотухой!"
+		},
+		{
+			"character": "character-1650187446.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Да не бормо...х-ам...а компот для тебя тоже бормотуха?"
+		},
+		{
+			"character": "character-1650786479.json",
+			"event_id": "dialogic_001",
+			"portrait": "Default",
+			"text": "Кумпот? Кумпот хороший, сладкий, вкусный.\nНе то что ваши бормотухи, они горькие и противные."
+		},
+		{
+			"character": "character-1650187446.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Если я тебе сварю компота, прекратишь отвары портить?"
+		},
+		{
+			"character": "character-1650786479.json",
+			"event_id": "dialogic_001",
+			"portrait": "Default",
+			"text": "Прекрачу на денек другой, пока пью"
+		},
+		{
+			"character": "character-1650786479.json",
+			"event_id": "dialogic_001",
+			"portrait": "Щкит-заглушка злой",
+			"text": "Но потом снова чего-нибудь разобью!\nСлишком противный запах!"
+		},
+		{
+			"event_id": "dialogic_024",
+			"set_theme": "default-theme.cfg"
+		},
+		{
+			"animation": "back_out_right.gd",
+			"animation_length": 1,
+			"change_mirror_portrait": false,
+			"change_z_index": false,
+			"character": "character-1650786479.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"portrait": "",
+			"portrait_definition": "",
+			"position": {
+				"0": false,
+				"1": false,
+				"2": false,
+				"3": false,
+				"4": false
+			},
+			"type": 1,
+			"z_index": 0
+		},
+		{
+			"character": "character-1650209144.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Сказав это, Щкит улизнул куда-то под шкаф.\nВы вновь остались наедине со склянками и банками.\nРаздосадованный таким знакомством, вы поднялись наверх."
+		},
+		{
+			"event_id": "dialogic_024",
+			"set_theme": "theme-1650186455.cfg"
+		},
+		{
+			"audio": "play",
+			"audio_bus": "Master",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "res://dialogic/sounds/Скрип половицы.mp3",
+			"volume": 0
+		},
+		{
+			"background": "res://locations/Laboratoria.jpg",
+			"event_id": "dialogic_021"
+		},
+		{
+			"audio": "play",
+			"audio_bus": "Master",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "",
+			"volume": 0
+		},
+		{
+			"animation": "1-fade_in.gd",
+			"animation_length": 1,
+			"change_mirror_portrait": false,
+			"change_z_index": false,
+			"character": "character-1650178976.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"portrait": "Default",
+			"portrait_definition": "",
+			"position": {
+				"0": false,
+				"1": false,
+				"2": false,
+				"3": true,
+				"4": false
+			},
+			"type": 0,
+			"z_index": 0
+		},
+		{
+			"character": "character-1650187446.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Чтож такое..."
+		},
+		{
+			"character": "character-1650178976.json",
+			"event_id": "dialogic_001",
+			"portrait": "Савелий-заглушка удивление",
+			"text": "Чего такой хмурый, внучек?"
+		},
+		{
+			"character": "character-1650187446.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Да домового повстречал...\nЩкит этот, пару склянок побил и обещал бить снова.\nА я хотел ему компота дать."
+		},
+		{
+			"character": "character-1650178976.json",
+			"event_id": "dialogic_001",
+			"portrait": "Савелий-заглушка радость",
+			"text": "Хо-хох, повстречал наконец Щкита.\nЭто хорошо, теперь поймешь какими бывают домовые"
+		},
+		{
+			"character": "character-1650187446.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "А что хорошего? Побьет все склянки и все.\nА столько сил потрачено..."
+		},
+		{
+			"character": "character-1650178976.json",
+			"event_id": "dialogic_001",
+			"portrait": "Default",
+			"text": "Это конечно жалко, но есть выход.\nТы можешь ему сварить компота - целую банку. Он после успокоится"
+		},
+		{
+			"character": "character-1650187446.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "А из чего варить? Я домой только  для растворов ингредиенты несу\nДа и не могу я целыми днями ему компоты варить! Выпьет этот, другой попросит!\nМне нужно и отвары делать."
+		},
+		{
+			"character": "character-1650178976.json",
+			"event_id": "dialogic_001",
+			"portrait": "Савелий-заглушка радость",
+			"text": "Уж поверь, ему одной банки хватит."
+		},
+		{
+			"character": "character-1650187446.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Хватит? Всего одной?"
+		},
+		{
+			"character": "character-1650178976.json",
+			"event_id": "dialogic_001",
+			"portrait": "Default",
+			"text": "Да, одной.\nЯ как-то раз сделал целую банку, он ее выпил за день.\nЗато потом такой довольный был, что аж до зимы меня не донимал.\nВот и ты попробуй."
+		},
+		{
+			"character": "character-1650187446.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Сдалось мне еще этому вредителю компоты делать?\nДа и не умею я их делать... и не из чего у нас сделать."
+		},
+		{
+			"character": "character-1650178976.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Зато я умею, спроси и расскажу все в подробностях.\nА уж про надобность не заикайся, поверь будет лучше сделать, чем позволить ему склянки бить.\nСчитай это своим последним испытанием. Чем вот компот не тот же раствор, а?\nА ингредиенты в лесу найдешь.\nЗемлянику ту же.\nЛимон правда еще нужен с его кислотой. Но я уж уболтаю наш огородик, он и его растить будет.\nЕдинственное чего не найдешь - сахар."
+		},
+		{
+			"character": "character-1650187446.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Сахар то? Это да...отродясь не пробовал, но слышал.\nГоворят сладкий...как мед."
+		},
+		{
+			"character": "character-1650178976.json",
+			"event_id": "dialogic_001",
+			"portrait": "Савелий-заглушка радость",
+			"text": "Еще слаще, уж поверь.\nЯ слыхивал от давнего знакомого, что можно его из свеклы делать, да вот только он не поведал мне, как именно.\nНо у меня есть запасы от него. Могу дать, но только немного!\nЕсли не получится, приходи просить снова."
+		},
+		{
+			"character": "character-1650187446.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Ага, постараюсь."
+		},
+		{
+			"event_id": "dialogic_024",
+			"set_theme": "default-theme.cfg"
+		},
+		{
+			"character": "character-1650209144.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Преисполнившись решимости, вы решили продолжить заниматься своими делами."
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.4.1",
+		"file": "timeline-1650781409.json",
+		"name": "Chapter_III"
+	}
+}

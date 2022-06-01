@@ -1,0 +1,196 @@
+[gd_scene load_steps=13 format=2]
+
+[ext_resource path="res://items/CraftItems/Stupka.png" type="Texture" id=1]
+[ext_resource path="res://Scripts/Craft/Stupka.gd" type="Script" id=2]
+[ext_resource path="res://items/UI/Stupka-back.png" type="Texture" id=3]
+[ext_resource path="res://items/UI/Menu-plashka.png" type="Texture" id=4]
+[ext_resource path="res://Scripts/ItemsMenuCraft.gd" type="Script" id=5]
+[ext_resource path="res://addons/dialogic/Example Assets/Fonts/DefaultFont.tres" type="DynamicFont" id=6]
+[ext_resource path="res://Scenes/Buttons/SceneButton.tscn" type="PackedScene" id=7]
+[ext_resource path="res://Scripts/MenuCraftStupka.gd" type="Script" id=8]
+[ext_resource path="res://items/Grasses/Formuls/Magni.png" type="Texture" id=9]
+[ext_resource path="res://addons/dialogic/Documentation/Theme/Font/NotoSans-Bold.ttf" type="DynamicFontData" id=10]
+
+[sub_resource type="DynamicFont" id=1]
+size = 50
+font_data = ExtResource( 10 )
+
+[sub_resource type="DynamicFont" id=2]
+size = 50
+font_data = ExtResource( 10 )
+
+[node name="Stupka" type="Node2D"]
+script = ExtResource( 2 )
+
+[node name="Sprite" type="Sprite" parent="."]
+position = Vector2( 14, 15 )
+texture = ExtResource( 1 )
+
+[node name="Menu" type="Control" parent="."]
+visible = false
+margin_left = -185.0
+margin_top = -821.0
+margin_right = 1003.0
+margin_bottom = -327.0
+script = ExtResource( 8 )
+
+[node name="Panel" type="Panel" parent="Menu"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -495.0
+margin_top = -204.0
+margin_right = 423.0
+margin_bottom = 235.0
+
+[node name="ItemsMenu" type="ScrollContainer" parent="Menu/Panel"]
+margin_left = 537.0
+margin_top = 9.0
+margin_right = 899.0
+margin_bottom = 348.0
+scroll_horizontal_enabled = false
+script = ExtResource( 5 )
+
+[node name="Grid" type="GridContainer" parent="Menu/Panel/ItemsMenu"]
+margin_right = 360.0
+margin_bottom = 350.0
+rect_min_size = Vector2( 360, 350 )
+
+[node name="ColorRect" type="ColorRect" parent="Menu/Panel/ItemsMenu/Grid"]
+margin_right = 360.0
+margin_bottom = 340.0
+rect_min_size = Vector2( 360, 340 )
+color = Color( 0.180392, 0.388235, 0.243137, 0.666667 )
+
+[node name="ItemList" type="ItemList" parent="Menu/Panel/ItemsMenu/Grid/ColorRect"]
+margin_left = 10.0
+margin_top = 6.0
+margin_right = 352.0
+margin_bottom = 332.0
+size_flags_horizontal = 0
+custom_constants/vseparation = 15
+custom_constants/line_separation = 5
+custom_constants/icon_margin = 5
+custom_constants/hseparation = 5
+items = [ "Romashka", null, false, "Sera", null, false ]
+icon_mode = 0
+
+[node name="TextureRect" type="TextureRect" parent="Menu/Panel"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -438.0
+margin_top = 131.0
+margin_right = 62.0
+margin_bottom = 851.0
+rect_rotation = -90.1404
+rect_scale = Vector2( 0.659281, 0.62761 )
+texture = ExtResource( 4 )
+
+[node name="Stupka" type="Sprite" parent="Menu/Panel"]
+position = Vector2( 257, 195.5 )
+rotation = 3.13959
+scale = Vector2( 0.310574, -0.290024 )
+texture = ExtResource( 3 )
+
+[node name="ColorRect" type="ColorRect" parent="Menu/Panel/Stupka"]
+modulate = Color( 0.803922, 0.803922, 0.803922, 1 )
+margin_left = -129.181
+margin_top = -206.603
+margin_right = 143.819
+margin_bottom = 68.3975
+color = Color( 0.623529, 0.623529, 0.623529, 0.745098 )
+
+[node name="Result" type="Sprite" parent="Menu/Panel/Stupka"]
+visible = false
+position = Vector2( 6.34149, -56.3945 )
+scale = Vector2( 1.44286, 1.96401 )
+texture = ExtResource( 9 )
+flip_h = true
+
+[node name="LabelRect" type="ColorRect" parent="Menu/Panel/Stupka"]
+visible = false
+modulate = Color( 0.803922, 0.803922, 0.803922, 1 )
+margin_left = -309.998
+margin_top = -476.883
+margin_right = 285.002
+margin_bottom = -267.883
+color = Color( 0.623529, 0.623529, 0.623529, 0.745098 )
+
+[node name="Success" type="Label" parent="Menu/Panel/Stupka/LabelRect"]
+visible = false
+margin_left = 593.0
+margin_top = -2.0
+margin_right = 1379.0
+margin_bottom = 193.0
+rect_min_size = Vector2( 500, 0 )
+rect_scale = Vector2( -0.747037, 1.09975 )
+custom_colors/font_color = Color( 0.27451, 0.980392, 0.368627, 1 )
+custom_colors/font_color_shadow = Color( 1, 1, 1, 1 )
+custom_fonts/font = SubResource( 1 )
+text = "Получено новое вещество!"
+align = 1
+valign = 1
+
+[node name="Fall" type="Label" parent="Menu/Panel/Stupka/LabelRect"]
+visible = false
+margin_left = 598.777
+margin_top = 4.43628
+margin_right = 1407.78
+margin_bottom = 184.436
+rect_scale = Vector2( -0.725964, 1.10708 )
+custom_colors/font_color = Color( 0.835294, 0, 0, 1 )
+custom_fonts/font = SubResource( 2 )
+text = "Вы получили что-то странное!"
+align = 1
+valign = 1
+
+[node name="Buttons" type="HBoxContainer" parent="Menu/Panel"]
+margin_left = 14.0
+margin_top = 369.0
+margin_right = 903.0
+margin_bottom = 432.0
+custom_constants/separation = 180
+
+[node name="Craft" parent="Menu/Panel/Buttons" instance=ExtResource( 7 )]
+margin_left = 0.0
+margin_top = 0.0
+margin_right = 150.0
+margin_bottom = 63.0
+custom_colors/font_color = Color( 0.0509804, 0.741176, 0.345098, 1 )
+custom_constants/hseparation = -5
+custom_fonts/font = ExtResource( 6 )
+text = "Перемолоть"
+
+[node name="TakeAtanor" parent="Menu/Panel/Buttons" instance=ExtResource( 7 )]
+margin_left = 330.0
+margin_top = 0.0
+margin_right = 491.0
+margin_bottom = 63.0
+custom_colors/font_color = Color( 0.0509804, 0.741176, 0.345098, 1 )
+custom_constants/hseparation = -5
+custom_fonts/font = ExtResource( 6 )
+text = "Убрать в атанор"
+
+[node name="TakeScale" parent="Menu/Panel/Buttons" instance=ExtResource( 7 )]
+visible = false
+margin_left = 491.0
+margin_top = 0.0
+margin_right = 641.0
+margin_bottom = 63.0
+custom_colors/font_color = Color( 0.0509804, 0.741176, 0.345098, 1 )
+custom_constants/hseparation = -5
+custom_fonts/font = ExtResource( 6 )
+text = "Взвесить"
+
+[node name="Return" parent="Menu/Panel/Buttons" instance=ExtResource( 7 )]
+margin_left = 671.0
+margin_top = 0.0
+margin_right = 821.0
+margin_bottom = 63.0
+custom_colors/font_color = Color( 0.0509804, 0.741176, 0.345098, 1 )
+custom_constants/hseparation = -5
+custom_fonts/font = ExtResource( 6 )
+text = "Вернуться"

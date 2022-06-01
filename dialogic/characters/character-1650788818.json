@@ -1,0 +1,25 @@
+{
+	"color": "#ff00886f",
+	"description": "",
+	"display_name": "",
+	"display_name_bool": false,
+	"id": "character-1650788818.json",
+	"mirror_portraits": false,
+	"name": "Вредитель",
+	"nickname": "",
+	"nickname_bool": false,
+	"offset_x": 0,
+	"offset_y": -95,
+	"portraits": [
+		{
+			"name": "Default",
+			"path": "res://characters/Щкит-заглушка.png"
+		},
+		{
+			"name": "Щкит-заглушка злой",
+			"path": "res://characters/Щкит-заглушка злой.png"
+		}
+	],
+	"scale": 100,
+	"theme": ""
+}
